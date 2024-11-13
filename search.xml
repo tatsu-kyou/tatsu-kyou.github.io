@@ -44,14 +44,27 @@
 <h2 id="模型局部最优化："><a href="#模型局部最优化：" class="headerlink" title="模型局部最优化："></a>模型局部最优化：</h2><p>接下来，我想做的是，利用循环和结果可视化来找到这个模型下的局部最优超参数。</p>
 <p>–つづけ</p>
 ]]></content>
+      <categories>
+        <category>AI</category>
+      </categories>
       <tags>
         <tag>deep learning</tag>
         <tag>CNN</tag>
       </tags>
   </entry>
   <entry>
-    <title>test</title>
-    <url>/2024/11/13/test/</url>
-    <content><![CDATA[]]></content>
+    <title>东游记(一)--此行伊始</title>
+    <url>/2024/11/13/Journey-to-the-East1/</url>
+    <content><![CDATA[<h3 id="写在最前面"><a href="#写在最前面" class="headerlink" title="写在最前面"></a>写在最前面</h3><p>折腾了好久，可算是把这个简陋的博客带起来了🤣。又回想起了早两年被编程环境支配的日子了。这次的博客是基于GitHub搭的，也许是感觉这样比博客园更高级？之前也没怎么接触过 <code>git</code>，就当是顺带学一下了。</p>
+<p>特意开了一个新的 <code>categories</code> 用来记录 <strong>四非菜鸡如我的修士养成之路</strong> 的。哈哈，搞得好像我已经上岸开始写经验贴了一样，もう大丈夫だから、絶対に修士になるよ！</p>
+<h3 id="为什么出发"><a href="#为什么出发" class="headerlink" title="为什么出发"></a>为什么出发</h3><p>其实这个问题我想了很久，我想修考如我的大家应该也有很多不同的原因。</p>
+]]></content>
+      <categories>
+        <category>东游记</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+        <tag>记录</tag>
+      </tags>
   </entry>
 </search>
