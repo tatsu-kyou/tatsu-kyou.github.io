@@ -734,7 +734,7 @@ body {
   background: var(--background-color);
   font-family: Geist Variable, Noto Sans SC, -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
 }
 html::-webkit-scrollbar,
@@ -894,7 +894,7 @@ button {
 }
 .markdown-body {
   font-family: 'Geist Variable', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif, sans-serif;
-  font-size: 16px;
+  font-size: 20px;
 }
 .markdown-body blockquote {
   box-sizing: border-box;
