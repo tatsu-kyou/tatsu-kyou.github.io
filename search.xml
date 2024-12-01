@@ -81,4 +81,44 @@
         <tag>记录</tag>
       </tags>
   </entry>
+  <entry>
+    <title>git command</title>
+    <url>/2024/12/01/git-command/</url>
+    <content><![CDATA[<p><strong>一下全部内容均搬运于b站up“GeekHour”，仅个人学习使用</strong></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/img/git-command/Git.png"
+                      alt="git command"
+                ></p>
+]]></content>
+      <categories>
+        <category>常用命令</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>command</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>本科毕设1--初探</title>
+    <url>/2024/11/29/%E6%9C%AC%E7%A7%91%E6%AF%95%E8%AE%BE/</url>
+    <content><![CDATA[<h2 id="毕设标题的灵感"><a href="#毕设标题的灵感" class="headerlink" title="毕设标题的灵感"></a>毕设标题的灵感</h2><p>其实没啥灵感可言，导通知说要定个题先应付一下学院的流程，遂上网冲浪寻找合适的题材。因为之后打算继续读研，javaweb相关的课题对我后续套磁的帮助不大，手头上又没有资源跑深度学习，所以打算做一些小体量的机器学习。正好那段时间听说outlook套磁容易进垃圾邮箱里，便对 <code>垃圾邮件的识别</code> 产生了一点兴趣(希望不是给自己挖的一个大坑)。所以就在不到一个小时的时间里草率的定下了毕设的课题。</p>
+<h2 id="起步时遇到的问题"><a href="#起步时遇到的问题" class="headerlink" title="起步时遇到的问题"></a>起步时遇到的问题</h2><p>刚开始我以为这只是一个比较简单的小课题，也就没放在心上，等两语的考试结束以后正式开始的时候，太久没有接触专业知识的陌生感，我才发现我连电子邮箱是什么，工作的细节都一无所知。只能硬着头皮干了。  </p>
+<ol>
+<li>什么是电子邮件？电子邮件是如何在互联网上传输的？</li>
+<li>什么是垃圾邮件？</li>
+<li>现在主流的垃圾邮件过滤器已经做到了什么程度？</li>
+<li>数据集选什么样的比较合适？</li>
+</ol>
+<p>个人认为解决了上述的几个问题，会对这个课题有一个较为全面的了解。</p>
+]]></content>
+      <categories>
+        <category>毕设</category>
+      </categories>
+      <tags>
+        <tag>machine learning</tag>
+        <tag>NLP</tag>
+      </tags>
+  </entry>
 </search>
