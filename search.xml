@@ -106,12 +106,18 @@
     <content><![CDATA[<h2 id="毕设标题的灵感"><a href="#毕设标题的灵感" class="headerlink" title="毕设标题的灵感"></a>毕设标题的灵感</h2><p>其实没啥灵感可言，导通知说要定个题先应付一下学院的流程，遂上网冲浪寻找合适的题材。因为之后打算继续读研，javaweb相关的课题对我后续套磁的帮助不大，手头上又没有资源跑深度学习，所以打算做一些小体量的机器学习。正好那段时间听说outlook套磁容易进垃圾邮箱里，便对 <code>垃圾邮件的识别</code> 产生了一点兴趣(希望不是给自己挖的一个大坑)。所以就在不到一个小时的时间里草率的定下了毕设的课题。</p>
 <h2 id="起步时遇到的问题"><a href="#起步时遇到的问题" class="headerlink" title="起步时遇到的问题"></a>起步时遇到的问题</h2><p>刚开始我以为这只是一个比较简单的小课题，也就没放在心上，等两语的考试结束以后正式开始的时候，太久没有接触专业知识的陌生感，我才发现我连电子邮箱是什么，工作的细节都一无所知。只能硬着头皮干了。  </p>
 <ol>
-<li>什么是电子邮件？电子邮件是如何在互联网上传输的？</li>
-<li>什么是垃圾邮件？</li>
+<li>什么是电子邮件？电子邮件的生命周期？</li>
+<li>什么是垃圾邮件？垃圾邮件的生命周期？</li>
 <li>现在主流的垃圾邮件过滤器已经做到了什么程度？</li>
 <li>数据集选什么样的比较合适？</li>
 </ol>
-<p>个人认为解决了上述的几个问题，会对这个课题有一个较为全面的了解。</p>
+<p>个人认为解决了上述的几个问题，会对这个课题有一个较为全面的了解。这个课题并不是非常新颖，在中文期刊中都已经有相当多的研究成果出现，所以有很多的问题可以在阅读文献后找到答案。</p>
+<h2 id="文献阅读"><a href="#文献阅读" class="headerlink" title="文献阅读"></a>文献阅读</h2><h3 id="1-《个性化垃圾邮件过滤的扩展研究》"><a href="#1-《个性化垃圾邮件过滤的扩展研究》" class="headerlink" title="1.《个性化垃圾邮件过滤的扩展研究》"></a>1.《个性化垃圾邮件过滤的扩展研究》</h3><p>作者：徐丹丹，南京航空航天大学</p>
+<p>是一篇硕士论文，在文章的绪论部分对上述的若干问题有较为详尽的解释，其中对于<code>垃圾邮件的生命周期</code>, <code>电子邮件的生命周期</code>的概念解释的较为清晰，结合GPT内容整理如下：</p>
+<div class="highlight-container" data-rel="M"><figure class="iseeu highlight m"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span>. 垃圾邮件的生命周期</span><br><span class="line">垃圾邮件是指未经请求发送给大量用户的广告或恶意邮件，通常用于推广产品、服务或执行恶意活动（如传播病毒、钓鱼攻击等）。垃圾邮件的生命周期包括几个阶段：</span><br><span class="line">    <span class="number">1.1</span> 域名注册阶段</span><br><span class="line">    攻击者选择域名：垃圾邮件发送者首先会选择并购买一个域名。这个域名通常看起来合法，但它们可能是用来建立一个虚假的网站，或者用于伪装成合法的公司或服务。通过注册域名，攻击者为垃圾邮件提供了一个发送的“地址”。</span><br><span class="line">    使用虚假信息：为了掩盖身份，垃圾邮件发送者可能会使用假信息注册域名，从而使追踪和防范变得更加困难。</span><br><span class="line">    <span class="number">1.2</span> DNS 名称解析和托管</span><br><span class="line">    DNS 配置：一旦攻击者注册了域名，他们需要配置DNS（域名系统）以便正确解析域名到特定的IP地址。DNS 服务器将负责将域名转换为计算机可识别的IP地址，指向一个Web 服务器。</span><br><span class="line">    网站托管：垃圾邮件发送者会搭建一个网站，该网站可能是一个恶意网站或虚假广告网站。这个网站可能包含恶意软件，或通过诱导用户点击链接进行钓鱼攻击。</span><br><span class="line">    <span class="number">1.3</span> 垃圾邮件的发送</span><br><span class="line">    僵尸网络：垃圾邮件的发送通常依赖于僵尸网络（botnets）。僵尸网络由大量受感染的计算机组成，攻击者通过它们来分发垃圾邮件。这些计算机通常是被恶意软件感染的，它们的所有者并不知道自己计算机的“角色”。</span><br><span class="line">    发送垃圾邮件：攻击者通过这些受控的计算机发送大量垃圾邮件，目的是让受害者点击邮件中的链接，访问恶意网站或下载恶意文件。</span><br><span class="line">    <span class="number">1.4</span> 诱使用户点击链接</span><br><span class="line">    钓鱼攻击：垃圾邮件中常常会嵌入恶意链接，这些链接指向伪装成合法网站的页面，目的是窃取用户个人信息、信用卡信息等。</span><br><span class="line">    诱导点击：通过各种手段（如假冒银行邮件、虚假优惠信息等），攻击者试图诱导用户点击邮件中的链接。</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>. 电子邮件的生命周期</span><br><span class="line">电子邮件的生命周期描述了从邮件创建到最终传递或丢弃的全过程。它通常涉及以下几个主要阶段：</span><br><span class="line">    <span class="number">2.1</span> 邮件创建</span><br><span class="line">    编写邮件：用户在电子邮件客户端（如Outlook、Gmail等）中编写一封邮件。邮件包括收件人、发件人、主题、正文内容以及附件。</span><br><span class="line">    发送邮件：用户点击发送按钮后，邮件通过邮件客户端发送到邮件服务器。</span><br><span class="line">    <span class="number">2.2</span> 邮件传输</span><br><span class="line">    发件人邮件服务器：邮件首先到达发件人的邮件服务器（通常是SMTP服务器），这是电子邮件传输的起点。</span><br><span class="line">    邮件路由：邮件服务器通过DNS查找目标邮件服务器的IP地址，并根据邮件的目的地进行路由。邮件可能经过多个中转服务器，特别是在不同域名之间发送邮件时。</span><br><span class="line">    中继服务器：如果目标邮件服务器不可用，邮件会通过中继服务器转发，直到到达最终目标服务器。</span><br><span class="line">    <span class="number">2.3</span> 邮件接收</span><br><span class="line">    接收方邮件服务器：邮件最终到达接收方的邮件服务器（通常是POP3或IMAP服务器）。接收方邮件服务器负责存储和管理邮件。</span><br><span class="line">    反垃圾邮件过滤：接收方邮件服务器会进行垃圾邮件过滤，检查邮件是否符合垃圾邮件的特征。如果是垃圾邮件，邮件会被拦截并放入垃圾邮件文件夹。</span><br><span class="line">    <span class="number">2.4</span> 邮件阅读</span><br><span class="line">    接收用户读取邮件：邮件最终到达接收方的电子邮件客户端，用户可以查看邮件内容。此时，邮件可能已经被标记为“已读”。</span><br><span class="line">    邮件响应：如果邮件是正常邮件，接收方可能会回复、转发邮件，或执行其他操作。如果邮件是垃圾邮件，接收方可能会选择标记为垃圾邮件或删除。</span><br><span class="line">    <span class="number">2.5</span> 邮件存档或删除</span><br><span class="line">    存档邮件：用户可以将重要邮件存档，以便以后查阅。</span><br><span class="line">    删除邮件：不再需要的邮件会被删除，垃圾邮件通常在这一阶段被清除。</span><br><span class="line">    <span class="number">2.6</span> 邮件丢失或失败传递</span><br><span class="line">    邮件失败传递：如果由于网络故障或邮件服务器问题，邮件无法送达目标地址，邮件系统会发送“传递失败”通知。</span><br><span class="line">    丢失邮件：在极少数情况下，由于邮件系统故障或配置错误，邮件可能在传输过程中丢失。</span><br></pre></td></tr></table></figure></div>
+
+<p>此外，该文章还提出了<code>用户个性化过滤方案</code>，在传统的通用过滤器的筛选结果的基础上，基于多任务学习原理设计了两个相互学习的过滤器分别用于收件箱和垃圾箱的邮件的再过滤。这样做可以修正第一次过滤的结果，解决类不平均问题和用户对垃圾邮件的定义差异问题。</p>
+<p>还有一个我比较在一的点，<code>广义虚漂移</code>，这个概念在目前看到的几篇文献中并未被提出，</p>
 ]]></content>
       <categories>
         <category>毕设</category>
@@ -119,6 +125,28 @@
       <tags>
         <tag>machine learning</tag>
         <tag>NLP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Experience in improving spoken Japanese</title>
+    <url>/2024/12/02/Experience-in-improving-spoken-Japanese/</url>
+    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>斥巨资5r买来的经验贴，感觉很实用所以整理好了放在自己的blog上，期待有缘人发现，当然如果有兴趣提升日语口语的欢迎和我talk😉😉😉🤩🤩🤩！</p>
+<p>感觉提升一门语言听说的最快方法就是创造语境，这份经验贴也是如此，跟着下面的步骤走在国内也可以有语境，但大大大前提是要<code>坚持</code>下来。</p>
+<h2 id="第一阶段：掌握单词、短句发音"><a href="#第一阶段：掌握单词、短句发音" class="headerlink" title="第一阶段：掌握单词、短句发音"></a>第一阶段：掌握单词、短句发音</h2><p>推荐时间:2个月<br>b站明王道跟动漫学标日单词<br>【【单词速记】跟动漫学新标日单词(初级上册合集)-哔哩哔哩】<a class="link"   href="https://b23.tv/tEkVa30" >https://b23.tv/tEkVa30 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>  </p>
+<p>复述每句动漫台词，每天花一个半小时左右，直到把每个发音都听清</p>
+<p>因为我在得到这份经验贴的时候刚过完N2，单词的发音这一块还有点印象的，所以这一块不会花太长的时间。但还是要过一遍的，毕竟基础不牢地动山摇。</p>
+<h2 id="第二阶段：熟练不同场景下的对话"><a href="#第二阶段：熟练不同场景下的对话" class="headerlink" title="第二阶段：熟练不同场景下的对话"></a>第二阶段：熟练不同场景下的对话</h2><p>推荐时间：半年<br>最最剧场APP  </p>
+<p>要求：必须选择1分钟左右动漫片段，台词十几句的进行配音(不要选择其他素材，后期用的时候动漫特定场景应用会浮现在脑海里，别的素材做不到) </p>
+<p>数量：保质保量完成50个作品(每个作品练习时长至少半小时)  </p>
+<p>听力巩固：每天听自己配过的作品，最好一个作品看几百遍</p>
+<h2 id="第三阶段：日常对话训练"><a href="#第三阶段：日常对话训练" class="headerlink" title="第三阶段：日常对话训练"></a>第三阶段：日常对话训练</h2><p>推荐时间：不在日本的所有时间<br>Hellotalk APP  </p>
+<p>找陌生日本人搭话，先文字聊天(学会使用日语输入法，聊几天就有组织句子的感觉了)，然后找人约打电话，最好对方会一些中文，找固定语伴，每周一小时，对话可达日常水平</p>
+<h2 id="总结：无他，但手熟尔"><a href="#总结：无他，但手熟尔" class="headerlink" title="总结：无他，但手熟尔"></a>总结：无他，但手熟尔</h2><p>不必留于形式，看完这篇经验贴就把他忘了吧，你需要做的是花更多的时间去记单词、去组织语言、去交流。</p>
+<p>日语学习中常会听到一句话<code>“N1过了就算入门了”</code>，是也是这个理，有没有这个N1都无所谓，大胆开口去说就完了！</p>
+]]></content>
+      <tags>
+        <tag>日语</tag>
+        <tag>经验贴</tag>
       </tags>
   </entry>
 </search>
