@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="tasukyou">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="https://tatsu-kyou.github.io/2024/11/29/毕设杂记/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+    
+    
+        
+        <meta name="description" content="毕设标题的灵感其实没啥灵感可言，导通知说要定个题先应付一下学院的流程，遂上网冲浪寻找合适的题材。因为之后打算继续读研，javaweb相关的课题对我后续套磁的帮助不大，手头上又没有资源跑深度学习，所以打算做一些小体量的机器学习。正好选题那段时间听说outlook套磁容易进垃圾邮箱里，便对 垃圾邮件的识别 产生了一点兴趣(希望不是给自己挖的一个大坑)。所以就在不到一个小时的时间里草率的定下了毕设的课题">
+<meta property="og:type" content="article">
+<meta property="og:title" content="毕设杂记">
+<meta property="og:url" content="https://tatsu-kyou.github.io/2024/11/29/%E6%AF%95%E8%AE%BE%E6%9D%82%E8%AE%B0/index.html">
+<meta property="og:site_name" content="tatsukyou&#39;s blog">
+<meta property="og:description" content="毕设标题的灵感其实没啥灵感可言，导通知说要定个题先应付一下学院的流程，遂上网冲浪寻找合适的题材。因为之后打算继续读研，javaweb相关的课题对我后续套磁的帮助不大，手头上又没有资源跑深度学习，所以打算做一些小体量的机器学习。正好选题那段时间听说outlook套磁容易进垃圾邮箱里，便对 垃圾邮件的识别 产生了一点兴趣(希望不是给自己挖的一个大坑)。所以就在不到一个小时的时间里草率的定下了毕设的课题">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://tatsu-kyou.github.io/img/%E6%AF%95%E8%AE%BE%E6%9D%82%E8%AE%B0/%E6%A6%82%E5%BF%B5%E6%BC%82%E7%A7%BB.png">
+<meta property="og:image" content="https://tatsu-kyou.github.io/img/%E6%AF%95%E8%AE%BE%E6%9D%82%E8%AE%B0/email_sample.png">
+<meta property="article:published_time" content="2024-11-29T13:15:40.000Z">
+<meta property="article:modified_time" content="2024-12-25T14:57:50.815Z">
+<meta property="article:author" content="tatsukyou">
+<meta property="article:tag" content="machine learning">
+<meta property="article:tag" content="NLP">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tatsu-kyou.github.io/img/%E6%AF%95%E8%AE%BE%E6%9D%82%E8%AE%B0/%E6%A6%82%E5%BF%B5%E6%BC%82%E7%A7%BB.png">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/logo.svg" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.svg">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="/images/logo.svg">
+    <!--- Page Info-->
+    
+    <title>
+        
+            毕设杂记 | Tatsukyouのblog
+        
+    </title>
+
+    
+<link rel="stylesheet" href="/fonts/Chillax/chillax.css">
+
+
+    <!--- Inject Part-->
+    
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+        
+<link rel="stylesheet" href="/css/build/tailwind.css">
+
+    
+
+    
+<link rel="stylesheet" href="/fonts/GeistMono/geist-mono.css">
+
+    
+<link rel="stylesheet" href="/fonts/Geist/geist.css">
+
+    <!--- Font Part-->
+    
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    
+    
+    
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    
+        <link href="https://fonts.googleapis.com/css?family=Arial&display=swap" rel="stylesheet">
+    
+    
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    
+    
+        
+<script src="/js/build/libs/anime.min.js"></script>
+
+    
+
+    <script id="hexo-configurations">
+    window.config = {"hostname":"tatsu-kyou.github.io","root":"/","language":"en","path":"search.xml"};
+    window.theme = {"articles":{"style":{"font_size":"20px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"delete_mask":false,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":false,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","highlight_theme":{"light":"github","dark":"vs2015"},"font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"pangu_js":false,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":true,"family":"Noto Sans SC","url":"https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap"},"english":{"enable":true,"family":"Arial","url":"https://fonts.googleapis.com/css?family=Arial&display=swap"},"title":{"enable":true,"family":"Lobster","url":"https://fonts.googleapis.com/css2?family=Lobster&display=swap"}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":true,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":{"enable":true,"custom_message":"My Story Is Just Begining."},"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"Tatsukyou","subtitle":{"text":["无数个我们 无数次喜悦相逢","我从未用过你一秒 却在心里失去过无数遍","好景不常在 才惹人留步","時間の無駄遣いって　ある種の青春だと思わない？"],"hitokoto":{"enable":false,"show_author":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"3.2rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":true,"family":"Lobster","url":"https://fonts.googleapis.com/css2?family=Lobster&display=swap"},"social_links":{"enable":true,"style":"default","links":{"github":"https://github.com/tatsu-kyou","instagram":null,"zhihu":"https://www.zhihu.com/people/xi-xi-xi-8-77-70","twitter":null,"email":"zhangchenqiang03@gmail.com"},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null,"lrc":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.8.2","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Categories":{"path":"/categories","icon":"fa-regular fa-folder"},"Links":{"icon":"fa-regular fa-link","submenus":{"JueJin":"https://juejin.cn/user/2080719249877928","CSDN":"https://blog.csdn.net/tatsukyou","cnBlog":"https://www.cnblogs.com/Tatsukyou"}}},"search":{"enable":true,"preload":true},"tags":{"Tags":{"icon":"fa-solid fa-tags","path":"/tags/"}}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":"冲刺毕业ing 脱产修考ing……","show_on_mobile":true,"links":{"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Tags":{"path":"/tags","icon":"fa-regular fa-tags"},"Categories":{"path":"/categories","icon":"fa-regular fa-folder"}}},"article_date_format":"auto","excerpt_length":200,"categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2024/11/11 12:00:00"};
+    window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    window.data = {"masonry":false};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+
+<body>
+	<div class="progress-bar-container">
+	
+	<span class="scroll-progress-bar"></span>
+	
+
+	
+	<span class="pjax-progress-bar"></span>
+	<!--        <span class="swup-progress-icon">-->
+	<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
+	<!--        </span>-->
+	
+</div>
+
+<style>
+    :root {
+        --preloader-background-color: #fff;
+        --preloader-text-color: #000;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --preloader-background-color: #202124;
+            --preloader-text-color: #fff;
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        :root {
+            --preloader-background-color: #fff;
+            --preloader-text-color: #000;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .ml13 {
+            font-size: 2.6rem !important; /* Adjust this value as needed */
+        }
+    }
+
+    .preloader {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem; /* Tailwind 'gap-4' is 1rem */
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        padding: 12px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh; /* 'h-screen' is 100% of the viewport height */
+        background-color: var(--preloader-background-color);
+        z-index: 1100; /* 'z-[1100]' sets the z-index */
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .ml13 {
+        font-size: 3.2rem;
+        /* text-transform: uppercase; */
+        color: var(--preloader-text-color);
+        letter-spacing: -1px;
+        font-weight: 500;
+        font-family: 'Chillax-Variable', sans-serif;
+        text-align: center;
+    }
+
+    .ml13 .word {
+        display: inline-flex;
+        flex-wrap: wrap;
+        white-space: nowrap;
+    }
+
+    .ml13 .letter {
+        display: inline-block;
+        line-height: 1em;
+    }
+</style>
+
+<div class="preloader">
+    <h2 class="ml13">
+        My Story Is Just Begining.
+    </h2>
+    <script>
+        var textWrapper = document.querySelector('.ml13');
+        // Split text into words
+        var words = textWrapper.textContent.trim().split(' ');
+
+        // Clear the existing content
+        textWrapper.innerHTML = '';
+
+        // Wrap each word and its letters in spans
+        words.forEach(function(word) {
+            var wordSpan = document.createElement('span');
+            wordSpan.classList.add('word');
+            wordSpan.innerHTML = word.replace(/\S/g, "<span class='letter'>$&</span>");
+            textWrapper.appendChild(wordSpan);
+            textWrapper.appendChild(document.createTextNode(' ')); // Add space between words
+        });
+
+        var animation = anime.timeline({ loop: true })
+            .add({
+                targets: '.ml13 .letter',
+                translateY: [20, 0],
+                translateZ: 0,
+                opacity: [0, 1],
+                filter: ['blur(5px)', 'blur(0px)'],
+                easing: "easeOutExpo",
+                duration: 1200,
+                delay: (el, i) => 300 + 20 * i,
+            })
+            .add({
+                targets: '.ml13 .letter',
+                translateY: [0, -20],
+                opacity: [1, 0],
+                filter: ['blur(0px)', 'blur(5px)'],
+                easing: "easeInExpo",
+                duration: 1000,
+                delay: (el, i) => 15 * i,
+                complete: function() {
+                    hidePreloader();
+                }
+            }, '-=700');
+
+
+        let themeStatus = JSON.parse(localStorage.getItem('REDEFINE-THEME-STATUS'))?.isDark;
+
+        // If the theme status is not found in local storage, check the preferred color scheme
+        if (themeStatus === undefined || themeStatus === null) {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                themeStatus = 'dark';
+            } else {
+                themeStatus = 'light';
+            }
+        }
+
+        // Now you can use the themeStatus variable in your code
+        if (themeStatus) {
+            document.documentElement.style.setProperty('--preloader-background-color', '#202124');
+            document.documentElement.style.setProperty('--preloader-text-color', '#fff');
+        } else {
+            document.documentElement.style.setProperty('--preloader-background-color', '#fff');
+            document.documentElement.style.setProperty('--preloader-text-color', '#000');
+        }
+
+        window.addEventListener('load', function () {
+            setTimeout(hidePreloader, 5000); // Call hidePreloader after 5000 milliseconds if not already called by animation
+        });
+
+        function hidePreloader() {
+            var preloader = document.querySelector('.preloader');
+            preloader.style.opacity = '0';
+            setTimeout(function () {
+                preloader.style.display = 'none';
+            }, 200);
+        }
+    </script>
+</div>
+
+<main class="page-container" id="swup">
+
+	
+
+	<div class="main-content-container flex flex-col justify-between min-h-dvh">
+		<div class="main-content-header">
+			<header class="navbar-container px-6 md:px-12">
+    <div class="navbar-content transition-navbar ">
+        <div class="left">
+            
+                <a class="logo-image h-8 w-8 sm:w-10 sm:h-10 mr-3" href="/">
+                    <img src="/images/logo.svg" class="w-full h-full rounded-sm">
+                </a>
+            
+            <a class="logo-title" href="/">
+                
+                Tatsukyouのblog
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/"
+                                        >
+                                    <i class="fa-regular fa-house fa-fw"></i>
+                                    HOME
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/archives"
+                                        >
+                                    <i class="fa-regular fa-archive fa-fw"></i>
+                                    ARCHIVES
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/categories"
+                                        >
+                                    <i class="fa-regular fa-folder fa-fw"></i>
+                                    CATEGORIES
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="has-dropdown"
+                                   href="#"
+                                        onClick=&#34;return false;&#34;>
+                                    <i class="fa-regular fa-link fa-fw"></i>
+                                    LINKS
+                                    <i class="fa-solid fa-chevron-down fa-fw"></i>
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                                    <ul class="sub-menu">
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener" href="https://juejin.cn/user/2080719249877928">
+                                                    JUEJIN
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener" href="https://blog.csdn.net/tatsukyou">
+                                                    CSDN
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener" href="https://www.cnblogs.com/Tatsukyou">
+                                                    CNBLOG
+                                                </a>
+                                            </li>
+                                        
+                                    </ul>
+                                
+                            </li>
+                    
+                    
+                        <li class="navbar-item search search-popup-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile sheet -->
+    <div class="navbar-drawer h-dvh w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/"
+                        >
+                            <span>
+                                HOME
+                            </span>
+                            
+                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/archives"
+                        >
+                            <span>
+                                ARCHIVES
+                            </span>
+                            
+                                <i class="fa-regular fa-archive fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/categories"
+                        >
+                            <span>
+                                CATEGORIES
+                            </span>
+                            
+                                <i class="fa-regular fa-folder fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item-sub text-base my-1.5 flex flex-col w-full">
+                        
+                        <div class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary cursor-pointer text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                             navbar-data-toggle="submenu-Links"
+                        >
+                            <span>
+                                LINKS
+                            </span>
+                            
+                                <i class="fa-solid fa-chevron-right fa-sm fa-fw transition-all"></i>
+                            
+                        </div>
+                        
+
+                        
+                            <div class="flex-col items-start px-2 py-2 hidden" data-target="submenu-Links">
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           target="_blank" rel="noopener" href="https://juejin.cn/user/2080719249877928">JUEJIN</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           target="_blank" rel="noopener" href="https://blog.csdn.net/tatsukyou">CSDN</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           target="_blank" rel="noopener" href="https://www.cnblogs.com/Tatsukyou">CNBLOG</a>
+                                    </div>
+                                
+                            </div>
+                        
+                    </li>
+            
+
+            
+            
+                
+                    
+                    
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
+                           href="/tags"
+                        >
+                            <span>Tags</span>
+                            <i class="fa-regular fa-tags fa-sm fa-fw"></i>
+                        </a>
+                    </li>
+                
+                    
+            
+        </ul>
+
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">13</div>
+        <div class="label text-third-text-color text-sm">Tags</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">5</div>
+        <div class="label text-third-text-color text-sm">Categories</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">7</div>
+        <div class="label text-third-text-color text-sm">Posts</div>
+    </a>
+</div>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+		</div>
+
+		<div class="main-content-body transition-fade-up">
+			
+
+			<div class="main-content">
+				<div class="post-page-container flex relative justify-between box-border w-full h-full">
+	<div class="article-content-container">
+
+		<div class="article-title relative w-full">
+			
+			
+			
+			<img src="/img/%E6%AF%95%E8%AE%BE%E6%9D%82%E8%AE%B0/cover.jpg" alt="毕设杂记" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75" />
+			
+			<div class="w-full flex items-center absolute bottom-0 justify-start">
+				<h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-semibold backdrop-blur-lg rounded-xl border border-border-color ">毕设杂记</h1>
+			</div>
+			
+		</div>
+
+		
+		<div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+			<div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+				<img src="/images/rinn.jpg">
+			</div>
+			<div class="info flex flex-col justify-between">
+				<div class="author flex items-center">
+					<span class="name text-default-text-color text-lg font-semibold">tasukyou</span>
+					
+				</div>
+				<div class="meta-info">
+					<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2024-11-29 21:15:40</span>
+        <span class="mobile">2024-11-29 21:15:40</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2024-12-25 22:57:50</span>
+            <span class="mobile">2024-12-25 22:57:50</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E6%AF%95%E8%AE%BE/">毕设</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/machine-learning/">machine learning</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/NLP/">NLP</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>4.8k Words</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>17 Mins</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+				</div>
+			</div>
+		</div>
+		
+
+		
+
+
+		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+			<h2 id="毕设标题的灵感"><a href="#毕设标题的灵感" class="headerlink" title="毕设标题的灵感"></a>毕设标题的灵感</h2><p>其实没啥灵感可言，导通知说要定个题先应付一下学院的流程，遂上网冲浪寻找合适的题材。因为之后打算继续读研，javaweb相关的课题对我后续套磁的帮助不大，手头上又没有资源跑深度学习，所以打算做一些小体量的机器学习。正好选题那段时间听说outlook套磁容易进垃圾邮箱里，便对 <code>垃圾邮件的识别</code> 产生了一点兴趣(希望不是给自己挖的一个大坑)。所以就在不到一个小时的时间里草率的定下了毕设的课题。</p>
+<h2 id="需要了解的知识-持续扩充，缓慢解决"><a href="#需要了解的知识-持续扩充，缓慢解决" class="headerlink" title="需要了解的知识(持续扩充，缓慢解决)"></a>需要了解的知识(持续扩充，缓慢解决)</h2><p>刚开始我以为这只是一个比较简单的小课题，也就没放在心上，等两语的考试结束以后正式开始的时候，太久没有接触专业知识的陌生感，我才发现我连email是什么，send email的工作具体细节都一无所知，只能硬着头皮干了。  </p>
+<ol>
+<li>什么是电子邮件？电子邮件的生命周期？</li>
+<li>什么是垃圾邮件？垃圾邮件的生命周期？</li>
+<li>电子邮件的协议格式有哪些？具体内容是什么？</li>
+<li>现在主流的垃圾邮件过滤器已经做到了什么程度？不同的模型又有哪些不足之处？现有的改进方法有哪些？</li>
+<li>数据集选什么样的比较合适？</li>
+</ol>
+<p>个人认为解决了上述的几个问题，会对这个课题有一个较为全面的了解。这个课题并不是非常新颖，在中文期刊中都已经有相当多的研究成果出现，所以有很多的问题可以在 <strong>阅读文献</strong> 后找到答案。</p>
+<h2 id="文献阅读"><a href="#文献阅读" class="headerlink" title="文献阅读"></a>文献阅读</h2><h3 id="1-《个性化垃圾邮件过滤的扩展研究》"><a href="#1-《个性化垃圾邮件过滤的扩展研究》" class="headerlink" title="1.《个性化垃圾邮件过滤的扩展研究》"></a>1.《个性化垃圾邮件过滤的扩展研究》</h3><p>作者：徐丹丹，南京航空航天大学</p>
+<p>是一篇硕士论文，在文章的绪论部分对上述的若干问题有较为详尽的解释，其中对于<code>垃圾邮件的生命周期</code>, <code>电子邮件的生命周期</code>的概念解释的较为清晰，结合GPT内容整理如下：</p>
+<div class="code-container" data-rel="M"><figure class="iseeu highlight m"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>. 垃圾邮件的生命周期</span><br><span class="line">垃圾邮件是指未经请求发送给大量用户的广告或恶意邮件，通常用于推广产品、服务或执行恶意活动（如传播病毒、钓鱼攻击等）。垃圾邮件的生命周期包括几个阶段：</span><br><span class="line">    <span class="number">1.1</span> 域名注册阶段</span><br><span class="line">    攻击者选择域名：垃圾邮件发送者首先会选择并购买一个域名。这个域名通常看起来合法，但它们可能是用来建立一个虚假的网站，或者用于伪装成合法的公司或服务。通过注册域名，攻击者为垃圾邮件提供了一个发送的“地址”。</span><br><span class="line">    使用虚假信息：为了掩盖身份，垃圾邮件发送者可能会使用假信息注册域名，从而使追踪和防范变得更加困难。</span><br><span class="line">    <span class="number">1.2</span> DNS 名称解析和托管</span><br><span class="line">    DNS 配置：一旦攻击者注册了域名，他们需要配置DNS（域名系统）以便正确解析域名到特定的IP地址。DNS 服务器将负责将域名转换为计算机可识别的IP地址，指向一个Web 服务器。</span><br><span class="line">    网站托管：垃圾邮件发送者会搭建一个网站，该网站可能是一个恶意网站或虚假广告网站。这个网站可能包含恶意软件，或通过诱导用户点击链接进行钓鱼攻击。</span><br><span class="line">    <span class="number">1.3</span> 垃圾邮件的发送</span><br><span class="line">    僵尸网络：垃圾邮件的发送通常依赖于僵尸网络（botnets）。僵尸网络由大量受感染的计算机组成，攻击者通过它们来分发垃圾邮件。这些计算机通常是被恶意软件感染的，它们的所有者并不知道自己计算机的“角色”。</span><br><span class="line">    发送垃圾邮件：攻击者通过这些受控的计算机发送大量垃圾邮件，目的是让受害者点击邮件中的链接，访问恶意网站或下载恶意文件。</span><br><span class="line">    <span class="number">1.4</span> 诱使用户点击链接</span><br><span class="line">    钓鱼攻击：垃圾邮件中常常会嵌入恶意链接，这些链接指向伪装成合法网站的页面，目的是窃取用户个人信息、信用卡信息等。</span><br><span class="line">    诱导点击：通过各种手段（如假冒银行邮件、虚假优惠信息等），攻击者试图诱导用户点击邮件中的链接。</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>. 电子邮件的生命周期</span><br><span class="line">电子邮件的生命周期描述了从邮件创建到最终传递或丢弃的全过程。它通常涉及以下几个主要阶段：</span><br><span class="line">    <span class="number">2.1</span> 邮件创建</span><br><span class="line">    编写邮件：用户在电子邮件客户端（如Outlook、Gmail等）中编写一封邮件。邮件包括收件人、发件人、主题、正文内容以及附件。</span><br><span class="line">    发送邮件：用户点击发送按钮后，邮件通过邮件客户端发送到邮件服务器。</span><br><span class="line">    <span class="number">2.2</span> 邮件传输</span><br><span class="line">    发件人邮件服务器：邮件首先到达发件人的邮件服务器（通常是SMTP服务器），这是电子邮件传输的起点。</span><br><span class="line">    邮件路由：邮件服务器通过DNS查找目标邮件服务器的IP地址，并根据邮件的目的地进行路由。邮件可能经过多个中转服务器，特别是在不同域名之间发送邮件时。</span><br><span class="line">    中继服务器：如果目标邮件服务器不可用，邮件会通过中继服务器转发，直到到达最终目标服务器。</span><br><span class="line">    <span class="number">2.3</span> 邮件接收</span><br><span class="line">    接收方邮件服务器：邮件最终到达接收方的邮件服务器（通常是POP3或IMAP服务器）。接收方邮件服务器负责存储和管理邮件。</span><br><span class="line">    反垃圾邮件过滤：接收方邮件服务器会进行垃圾邮件过滤，检查邮件是否符合垃圾邮件的特征。如果是垃圾邮件，邮件会被拦截并放入垃圾邮件文件夹。</span><br><span class="line">    <span class="number">2.4</span> 邮件阅读</span><br><span class="line">    接收用户读取邮件：邮件最终到达接收方的电子邮件客户端，用户可以查看邮件内容。此时，邮件可能已经被标记为“已读”。</span><br><span class="line">    邮件响应：如果邮件是正常邮件，接收方可能会回复、转发邮件，或执行其他操作。如果邮件是垃圾邮件，接收方可能会选择标记为垃圾邮件或删除。</span><br><span class="line">    <span class="number">2.5</span> 邮件存档或删除</span><br><span class="line">    存档邮件：用户可以将重要邮件存档，以便以后查阅。</span><br><span class="line">    删除邮件：不再需要的邮件会被删除，垃圾邮件通常在这一阶段被清除。</span><br><span class="line">    <span class="number">2.6</span> 邮件丢失或失败传递</span><br><span class="line">    邮件失败传递：如果由于网络故障或邮件服务器问题，邮件无法送达目标地址，邮件系统会发送“传递失败”通知。</span><br><span class="line">    丢失邮件：在极少数情况下，由于邮件系统故障或配置错误，邮件可能在传输过程中丢失。</span><br></pre></td></tr></table></figure></div>
+
+<p>此外，该文章还提出了<code>用户个性化过滤方案</code>，在传统的通用过滤器的筛选结果的基础上，基于多任务学习原理设计了两个相互学习的过滤器分别用于收件箱和垃圾箱的邮件的再过滤。这样做可以修正第一次过滤的结果，解决类不平均问题和用户对垃圾邮件的定义差异问题。</p>
+<br>
+
+<p>还有一个我比较在一的点，<code>概念漂移</code>，<code>广义虚漂移</code>，这个概念在目前看到的几篇文献中并未被提出。GPT给出的解释是：<font color='#FF6F91'>模型在初期训练时可能能够很好地拟合数据，但随着环境的动态变化，原本用于训练的数据的特征和标签之间的关系可能不再适用，从而导致模型的性能下降。</font>我的通俗的理解就是，因为我们要解决的问题是一个会随着时间变化的问题，用固定的数据集跑出来的模型它学习到的‘概念’是固定的，所以随着时间的推移，慢慢的就会变得不那么适用。这也是因为机器学习的 <code>强假设前提</code> ：数据的统计性质（均值、方差）是保持不变的。但实际上，统计性质是可能会随着时间发生波动的。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/img/%E6%AF%95%E8%AE%BE%E6%9D%82%E8%AE%B0/%E6%A6%82%E5%BF%B5%E6%BC%82%E7%A7%BB.png"
+                      alt="概念漂移"
+                ></p>
+<p>紧接着又提出了一个急需解决的问题：<code>类不平衡问题</code>，不过我感觉对于<code>二分类问题</code> 这种情况还是比较常见的，正负样本的比例不是1：1都算不平衡？感觉只要不是很严重的偏离，比如1：100，可以暂时先不管它。</p>
+<h3 id="2-加权贝叶斯邮件过滤方法研究"><a href="#2-加权贝叶斯邮件过滤方法研究" class="headerlink" title="2.加权贝叶斯邮件过滤方法研究"></a>2.加权贝叶斯邮件过滤方法研究</h3><p>作者：张远，哈尔滨工业大学</p>
+<p>同样是一篇硕士论文，这篇文章主要给我带来了<code>指纹向量特征编码</code>、<code>加权</code>等几个非常吸引我的点。回头看看能不能把他实现出来。</p>
+<p>(24-12-18)回头了，现在看来这篇的做法好像有一点超前了，虽然说是用到了加权思想，但其实我是没有看懂ta怎么用的加权的，对邮件头做和邮件体一样的特征提取的话，感觉就破坏了他的结构了。我认为对邮件头的处理可能使用 <strong>基于规则的过滤方法</strong> 会更合理一些，但是可行性还有待验证。</p>
+<p>(24-12-18)还有就是，<font color='#ac7c26'>这篇文章在处理指纹向量特征编码时，将文档切割成6-8个字符的小块</font>。串长越长计算指纹向量的时间也就越久，所以理论上来说是可以显著的提高运算效率的，但是这样操作会不会破坏文档内容的连续性作者并没有验证，也就是这样操作的合理性没有得到充分的证实，所以这个做法还有有待考究的。</p>
+<h3 id="3-基于规则的垃圾邮件过滤算法比较研究"><a href="#3-基于规则的垃圾邮件过滤算法比较研究" class="headerlink" title="3.基于规则的垃圾邮件过滤算法比较研究"></a>3.基于规则的垃圾邮件过滤算法比较研究</h3><p>这是一篇学报，篇幅较短，主要就是告诉我们干了一件事情得到了什么结果，其他的细节大家自己猜吧！据作者说，ta们在<strong>WEKA平台</strong>上基于PUI预料库比较了<code>Ripper算法</code>， <code>C4.5决策树</code>， <code>AdaBoost算法</code>等三个算法的性能，发现<code>AdaBoost算法</code>的性能最好。<font color='#E07250'>ta们用的评价指标是<code>准确率Precison</code>和<code>召回率Recall</code>。</font></p>
+<h2 id="初步实现"><a href="#初步实现" class="headerlink" title="初步实现"></a>初步实现</h2><p>如果只是单纯的实现一个基于NBC的垃圾邮件分类器的话其实是一个很简单的课题，在不考虑性能、内存的情况下，用一个极小的数据集训练的分类器加上python已经很好的集成了常见的机器学习的模型，通常数十行代码就可以搞定。接下来的代码就是一个简单的例子。</p>
+<div class="code-container" data-rel="Py"><figure class="iseeu highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">from</span> nltk.tokenize <span class="keyword">import</span> word_tokenize</span><br><span class="line"><span class="keyword">from</span> sklearn.feature_extraction.text <span class="keyword">import</span> TfidfVectorizer</span><br><span class="line"><span class="keyword">from</span> sklearn.naive_bayes <span class="keyword">import</span> MultinomialNB</span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split</span><br><span class="line"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> classification_report</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数据集的地址</span></span><br><span class="line">spam_dir = <span class="string">&#x27;./date2/spam/&#x27;</span></span><br><span class="line">ham_dir = <span class="string">&#x27;./date2/ham/&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 用于存储数据和标签，标签和内容是一一对应的</span></span><br><span class="line">data = []</span><br><span class="line">labels = []</span><br><span class="line"></span><br><span class="line"><span class="comment"># read datasets</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">read_data</span>(<span class="params">spam_dir, ham_dir</span>):</span><br><span class="line">    <span class="keyword">for</span> filename <span class="keyword">in</span> os.listdir(spam_dir):</span><br><span class="line">        <span class="keyword">with</span> <span class="built_in">open</span>(os.path.join (spam_dir, filename), <span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">            content = f.read().strip()</span><br><span class="line">            data.append(content)</span><br><span class="line">            labels.append(<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> filename <span class="keyword">in</span> os.listdir(ham_dir):</span><br><span class="line">        <span class="keyword">with</span> <span class="built_in">open</span>(os.path.join (ham_dir, filename), <span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">            content = f.read().strip()</span><br><span class="line">            data.append(content)</span><br><span class="line">            labels.append(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 英文分词器</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">english_tokenizer</span>(<span class="params">text</span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">list</span>(word_tokenize(text))</span><br><span class="line"></span><br><span class="line">read_data(spam_dir, ham_dir)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用TF-IDF向量化文本</span></span><br><span class="line">vectorizer = TfidfVectorizer(tokenizer=english_tokenizer, stop_words=<span class="literal">None</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将文本转化为TF-IDF矩阵</span></span><br><span class="line">X = vectorizer.fit_transform(data)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将标签转换为数组</span></span><br><span class="line">y = labels</span><br><span class="line"></span><br><span class="line"><span class="comment"># 划分训练集和测试集</span></span><br><span class="line">X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=<span class="number">0.3</span>, random_state=<span class="number">42</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用朴素贝叶斯分类器训练模型</span></span><br><span class="line">classifier = MultinomialNB()</span><br><span class="line">classifier.fit(X_train, y_train)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 在测试集上进行预测</span></span><br><span class="line">y_pred = classifier.predict(X_test)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打印分类报告</span></span><br><span class="line"><span class="built_in">print</span>(classification_report(y_test, y_pred))</span><br></pre></td></tr></table></figure></div>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Outcome:</span><br><span class="line">              precision    recall  f1-score   support</span><br><span class="line"></span><br><span class="line">           0       0.80      1.00      0.89         8</span><br><span class="line">           1       1.00      0.71      0.83         7</span><br><span class="line"></span><br><span class="line">    accuracy                           0.87        15</span><br><span class="line">   macro avg       0.90      0.86      0.86        15</span><br><span class="line">weighted avg       0.89      0.87      0.86        15</span><br></pre></td></tr></table></figure></div>
+<p>需要注意这里的数据集并非中文垃圾邮件数据集，而是一个简化的英文邮件数据集，并且只保留了邮件的正文部分。阅读文献我们会发现<font color='#FF6F91'>一封能在互联网上流通的邮件通常有：收件人(To)、抄送(CC)、密送(BCC)、主题(Subject)、正文(Body)、签名(Signature)、附件(Attachment)等数个部分构成</font>。这显然是不合理的，但是作为一个初代分类器，这样就已经非常nice了！接下来的任务就是在这基础上慢慢地做大、做强~さあ、行くぞ！</p>
+<h2 id="改用更大的数据集！"><a href="#改用更大的数据集！" class="headerlink" title="改用更大的数据集！"></a>改用更大的数据集！</h2><p>上述的始め数据集只有正负例各25个，接下来来个大的<font color='	#00C5CD'><strong>trec06c</strong></font>( <a class="link"   target="_blank" rel="noopener" href="https://plg.uwaterloo.ca/~gvcormac/treccorpus06/" >https://plg.uwaterloo.ca/~gvcormac/treccorpus06/<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> )。该数据集一共64,620 个文件，216 个文件夹，其中正样本数21766个，负样本数42454个。而且这个数据集是一个由不带附件的原始邮件组成数据集。邮件头和邮件体有时采用了不同的编码方式，所以需要对邮件头和邮件体进行解码。比如下面列出的一封邮件：</p>
+<div class="code-container" data-rel="Txt"><figure class="iseeu highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">Received: from jdl.ac.cn ([159.226.42.8])</span><br><span class="line">	by spam-gw.ccert.edu.cn (MIMEDefang) with ESMTP id j7C1ceuQ019050</span><br><span class="line">	for &lt;shi@ccert.edu.cn&gt;; Sun, 14 Aug 2005 10:02:01 +0800 (CST)</span><br><span class="line">Received: (qmail 5448 invoked from network); Sun, 14 Aug 2005 02:12:48 -0000</span><br><span class="line">Received: from unknown (HELO d47db5334f2a479) (192.168.0.233)</span><br><span class="line">  by 159.226.42.8 with SMTP; Sun, 14 Aug 2005 02:12:48 -0000</span><br><span class="line">Message-ID: &lt;000b01c59ee0$a1f666b0$e900a8c0@d47db5334f2a479&gt;</span><br><span class="line">From: &quot;pan&quot; &lt;pan@jdl.ac.cn&gt;</span><br><span class="line">To: shi@ccert.edu.cn</span><br><span class="line">Subject: =?gb2312?B?ofEgzsrSu7K/zrrX2s3ytcS159Oww/uzxg==?=</span><br><span class="line">Date: Sun, 14 Aug 2005 10:16:47 +0800</span><br><span class="line">MIME-Version: 1.0</span><br><span class="line">Content-Type: text/plain;</span><br><span class="line">	charset=&quot;gb2312&quot;</span><br><span class="line">Content-Transfer-Encoding: base64</span><br><span class="line">X-Priority: 3</span><br><span class="line">X-MSMail-Priority: Normal</span><br><span class="line">X-Mailer: Microsoft Outlook Express 6.00.2800.1506</span><br><span class="line">X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2800.1506</span><br><span class="line"></span><br><span class="line">讲的是孔子后人的故事。一个老领导回到家乡，跟儿子感情不和，跟贪财的孙子孔为本和睦。</span><br><span class="line">老领导的弟弟魏宗万是赶马车的。</span><br><span class="line">有个洋妞大概是考察民俗的，在他们家过年。</span><br><span class="line">孔为本总想出国，被爷爷教育了。</span><br><span class="line">最后，一家人基本和解。</span><br><span class="line">顺便问另一类电影，北京青年电影制片厂的。中越战背景。一军人被介绍了一个对象，去相亲。女方是军队医院的护士，犹豫不决，总是在回忆战场上负伤的男友，好像还没死。最后</span><br><span class="line">男方表示理解，归队了。</span><br></pre></td></tr></table></figure></div>
+<p>信息量非常大，在网上可以看到一些博主在训练模型时，直接将邮件头全部砍掉，只保留邮件体部分，将这个完整的数据集简化为同上的mini数据集。这怎么看都是不对的！哪怕它们跑出来的结果再好。<font color='	#00C5CD'><strong>我们要做的过滤器应该是同时考虑邮件头和邮件体两部分的内容的逻辑上完整的过滤器。</strong></font>这一部分的参考了<a href="#2%E5%8A%A0%E6%9D%83%E8%B4%9D%E5%8F%B6%E6%96%AF%E9%82%AE%E4%BB%B6%E8%BF%87%E6%BB%A4%E6%96%B9%E6%B3%95%E7%A0%94%E7%A9%B6">这篇</a>，所以在训练之前，需要搞清楚一封正常的电子邮件是由哪几部分构成的。</p>
+<h2 id="先搞清楚，电子邮件！"><a href="#先搞清楚，电子邮件！" class="headerlink" title="先搞清楚，电子邮件！"></a>先搞清楚，电子邮件！</h2><p>这部分的内容比较杂，我就放一些查到的资料把。</p>
+<div class="code-container" data-rel="Md"><figure class="iseeu highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 一封能在互联网上传播的电子邮件应包含的内容</span></span><br><span class="line"></span><br><span class="line">根据 <span class="strong">**RFC 822**</span> 和 <span class="strong">**MIME**</span> 标准，一封标准的电子邮件应包括以下几个组成部分：</span><br><span class="line"></span><br><span class="line"><span class="section">## 1. 邮件头部 (Headers)</span></span><br><span class="line">邮件头部包含了关于邮件本身和邮件通信过程的元信息。常见的邮件头部字段包括：</span><br><span class="line"></span><br><span class="line"><span class="section">### 1.1 发件人 (From)</span></span><br><span class="line"><span class="bullet">-</span> 指示邮件的发送者。</span><br><span class="line"><span class="bullet">-</span> 格式：<span class="code">`From: sender@example.com`</span></span><br><span class="line"><span class="bullet">-</span> 可以包括发件人的姓名，例如：<span class="code">`From: &quot;John Doe&quot; &lt;john.doe@example.com&gt;`</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 1.2 收件人 (To)</span></span><br><span class="line"><span class="bullet">-</span> 指定邮件的主要接收者。</span><br><span class="line"><span class="bullet">-</span> 格式：<span class="code">`To: recipient@example.com`</span></span><br><span class="line"><span class="bullet">-</span> 可以包括多个收件人，用逗号分隔。</span><br><span class="line"></span><br><span class="line"><span class="section">### 1.3 抄送 (CC) 和 密送 (BCC)</span></span><br><span class="line"><span class="bullet">-</span> <span class="strong">**抄送**</span>（CC）表示同时发送给其他人，而<span class="strong">**密送**</span>（BCC）则是发送给其他人但不公开其他收件人的地址。</span><br><span class="line"><span class="bullet">-</span> 格式：<span class="code">`CC: cc1@example.com, cc2@example.com`</span></span><br><span class="line"><span class="bullet">-</span> 格式：<span class="code">`BCC: bcc@example.com`</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 1.4 主题 (Subject)</span></span><br><span class="line"><span class="bullet">-</span> 邮件的主题行，简洁明了地概述邮件内容。</span><br><span class="line"><span class="bullet">-</span> 格式：<span class="code">`Subject: Meeting agenda for next week`</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 1.5 日期 (Date)</span></span><br><span class="line"><span class="bullet">-</span> 指明邮件的发送日期和时间。</span><br><span class="line"><span class="bullet">-</span> 格式：<span class="code">`Date: Wed, 21 Aug 2024 14:30:00 +0000`</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 1.6 邮件标识 (Message-ID)</span></span><br><span class="line"><span class="bullet">-</span> 每封邮件都会有一个唯一的标识符，帮助邮件系统跟踪邮件。</span><br><span class="line"><span class="bullet">-</span> 格式：<span class="code">`Message-ID: &lt;1234567890@example.com&gt;`</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 1.7 回复到 (Reply-To)</span></span><br><span class="line"><span class="bullet">-</span> 用于指定回复邮件时的目标地址，如果与发件人地址不同。</span><br><span class="line"><span class="bullet">-</span> 格式：<span class="code">`Reply-To: reply@example.com`</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 1.8 其他头部字段</span></span><br><span class="line"><span class="bullet">-</span> <span class="strong">**MIME-Version**</span>：标明邮件采用的 MIME 版本，通常是 <span class="code">`MIME-Version: 1.0`</span>。</span><br><span class="line"><span class="bullet">-</span> <span class="strong">**Content-Type**</span>：指定邮件内容的类型（如文本、HTML、附件等），在 MIME 邮件中非常重要。</span><br><span class="line"><span class="bullet">-</span> <span class="strong">**Content-Transfer-Encoding**</span>：描述邮件内容的编码方式（如 Base64 或 Quoted-Printable）。</span><br><span class="line"></span><br><span class="line"><span class="section">## 2. 邮件正文 (Body)</span></span><br><span class="line">邮件的正文是邮件的核心部分，包含具体的交流内容。正文的格式会根据 <span class="strong">**Content-Type**</span> 头部字段进行不同的处理。</span><br><span class="line"></span><br><span class="line"><span class="section">### 2.1 MIME 邮件的编码</span></span><br><span class="line"><span class="bullet">-</span> 如果邮件包含非 ASCII 字符或附件，它将使用 MIME（Multipurpose Internet Mail Extensions）标准进行编码，常见的编码方式有：</span><br><span class="line"><span class="bullet">  -</span> <span class="strong">**Base64**</span>：用于编码二进制数据（如图像、文档等附件）。</span><br><span class="line"><span class="bullet">  -</span> <span class="strong">**Quoted-Printable**</span>：用于编码较为简单的文本数据，避免控制字符导致邮件乱码。</span><br><span class="line">  </span><br><span class="line"><span class="section">### 2.2 文本邮件 (Text)</span></span><br><span class="line"><span class="bullet">-</span> <span class="strong">**纯文本**</span>（text/plain）邮件的正文内容通常是不带格式的文本。</span><br><span class="line"><span class="bullet">-</span> <span class="strong">**格式**</span>： <span class="code">`Content-Type: text/plain; charset=&quot;UTF-8&quot;`</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 2.3 HTML 邮件 (HTML)</span></span><br><span class="line"><span class="bullet">-</span> <span class="strong">**HTML 格式**</span>（text/html）邮件允许在正文中嵌入格式化文本、链接、图像等内容。</span><br><span class="line"><span class="bullet">-</span> <span class="strong">**格式**</span>： <span class="code">`Content-Type: text/html; charset=&quot;UTF-8&quot;`</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 2.4 多部分邮件 (Multipart)</span></span><br><span class="line"><span class="bullet">-</span> 如果邮件包含多个部分（例如，文本和附件），则会使用 <span class="strong">**multipart**</span> 类型的内容格式。</span><br><span class="line"><span class="bullet">-</span> <span class="strong">**格式**</span>：<span class="code">`Content-Type: multipart/mixed; boundary=&quot;boundary_string&quot;`</span></span><br><span class="line"></span><br><span class="line"><span class="section">## 3. 附件 (Attachments)</span></span><br><span class="line"><span class="bullet">-</span> 邮件可以包含附件文件，附件将通过 MIME 编码方式嵌入到邮件正文中。</span><br><span class="line"><span class="bullet">-</span> 每个附件都会有一个独立的内容描述，如 <span class="code">`Content-Type`</span> 和 <span class="code">`Content-Disposition`</span>。</span><br><span class="line"><span class="bullet">-</span> 示例：</span><br><span class="line">  <span class="code">```text</span></span><br><span class="line"><span class="code">  Content-Type: application/pdf; name=&quot;file.pdf&quot;</span></span><br><span class="line"><span class="code">  Content-Disposition: attachment; filename=&quot;file.pdf&quot;</span></span><br><span class="line"><span class="code">  Content-Transfer-Encoding: base64```</span></span><br><span class="line">  </span><br></pre></td></tr></table></figure></div>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/img/%E6%AF%95%E8%AE%BE%E6%9D%82%E8%AE%B0/email_sample.png"
+                      alt="email_sample"
+                ></p>
+<p>由上述的种种可以看出，email的头中蕴含这丰富的信息可以用于判断邮件是否为spam，但是它和邮件体带来的信息又是不同的。</p>
+
+		</div>
+
+		
+		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+			<div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> 毕设杂记</li>
+        <li><strong>Author:</strong> tasukyou</li>
+        <li><strong>Created at
+                :</strong> 2024-11-29 21:15:40</li>
+        
+            <li>
+                <strong>Updated at
+                    :</strong> 2024-12-25 22:57:50
+            </li>
+        
+        <li>
+            <strong>Link:</strong> https://github.com/tatsu-kyou/2024/11/29/毕设杂记/
+        </li>
+        <li>
+            <strong>
+                License:
+            </strong>
+            
+
+            
+                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
+            
+        </li>
+    </ul>
+</div>
+
+		</div>
+		
+
+		
+		<ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+			
+			<li class="tag-item mx-0.5">
+				<a href="/tags/machine-learning/">#machine learning</a>&nbsp;
+			</li>
+			
+			<li class="tag-item mx-0.5">
+				<a href="/tags/NLP/">#NLP</a>&nbsp;
+			</li>
+			
+		</ul>
+		
+
+		
+
+		
+		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+			
+			<div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="prev" rel="prev" href="/2024/12/01/git-command/">
+					<span class="left arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-left"></i>
+					</span>
+					<span class="title flex justify-center items-center">
+						<span class="post-nav-title-item">git command</span>
+						<span class="post-nav-item">Prev posts</span>
+					</span>
+				</a>
+			</div>
+			
+			
+			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="next" rel="next" href="/2024/11/13/Journey-to-the-East1/">
+					<span class="title flex justify-center items-center">
+						<span class="post-nav-title-item">东游记(一)--此行伊始</span>
+						<span class="post-nav-item">Next posts</span>
+					</span>
+					<span class="right arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-right"></i>
+					</span>
+				</a>
+			</div>
+			
+		</div>
+		
+
+
+		
+		<div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+			<div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        Comments
+    </div>
+    
+
+        
+            
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/js/libs/waline.mjs';
+
+      function loadWaline() {
+        init({
+          el: '#waline',
+          serverURL: 'https://tatsukyou.cyou',
+          lang: 'zh-CN',
+          dark: 'body[class~="dark-mode"]',
+          reaction: false,
+          requiredMeta: ['nick', 'mail'],
+          emoji: [],
+          
+          
+        });
+      }
+
+      if (typeof swup !== 'undefined') {
+        loadWaline();
+      } else {
+        window.addEventListener('DOMContentLoaded', loadWaline);
+      }
+    </script>
+
+
+
+        
+    
+</div>
+
+		</div>
+		
+	</div>
+
+	
+	<div class="toc-content-container">
+		<div class="post-toc-wrap">
+	<div class="post-toc">
+		<div class="toc-title">On this page</div>
+		<div class="page-title">毕设杂记</div>
+		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AF%95%E8%AE%BE%E6%A0%87%E9%A2%98%E7%9A%84%E7%81%B5%E6%84%9F"><span class="nav-text">毕设标题的灵感</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9C%80%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84%E7%9F%A5%E8%AF%86-%E6%8C%81%E7%BB%AD%E6%89%A9%E5%85%85%EF%BC%8C%E7%BC%93%E6%85%A2%E8%A7%A3%E5%86%B3"><span class="nav-text">需要了解的知识(持续扩充，缓慢解决)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB"><span class="nav-text">文献阅读</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E3%80%8A%E4%B8%AA%E6%80%A7%E5%8C%96%E5%9E%83%E5%9C%BE%E9%82%AE%E4%BB%B6%E8%BF%87%E6%BB%A4%E7%9A%84%E6%89%A9%E5%B1%95%E7%A0%94%E7%A9%B6%E3%80%8B"><span class="nav-text">1.《个性化垃圾邮件过滤的扩展研究》</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%8A%A0%E6%9D%83%E8%B4%9D%E5%8F%B6%E6%96%AF%E9%82%AE%E4%BB%B6%E8%BF%87%E6%BB%A4%E6%96%B9%E6%B3%95%E7%A0%94%E7%A9%B6"><span class="nav-text">2.加权贝叶斯邮件过滤方法研究</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%9F%BA%E4%BA%8E%E8%A7%84%E5%88%99%E7%9A%84%E5%9E%83%E5%9C%BE%E9%82%AE%E4%BB%B6%E8%BF%87%E6%BB%A4%E7%AE%97%E6%B3%95%E6%AF%94%E8%BE%83%E7%A0%94%E7%A9%B6"><span class="nav-text">3.基于规则的垃圾邮件过滤算法比较研究</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9D%E6%AD%A5%E5%AE%9E%E7%8E%B0"><span class="nav-text">初步实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%94%B9%E7%94%A8%E6%9B%B4%E5%A4%A7%E7%9A%84%E6%95%B0%E6%8D%AE%E9%9B%86%EF%BC%81"><span class="nav-text">改用更大的数据集！</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%88%E6%90%9E%E6%B8%85%E6%A5%9A%EF%BC%8C%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6%EF%BC%81"><span class="nav-text">先搞清楚，电子邮件！</span></a></li></ol>
+
+	</div>
+</div>
+	</div>
+	
+</div>
+			</div>
+
+			
+		</div>
+
+		<div class="main-content-footer">
+			<footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
+        
+            <div class="customize-info my-1">The excitement continues.</div>
+        
+        <div class="text-center">
+            &copy;
+            
+              <span>2024</span>
+              -
+            
+            2024&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">tasukyou</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        7 posts in total
+                    </span>
+                    
+                        <span>
+                            8.6k words in total
+                        </span>
+                    
+                </p>
+            
+        </div>
+        
+            <script data-swup-reload-script src="https://cn.vercount.one/js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">VISITOR COUNT</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">TOTAL PAGE VIEWS</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
+            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.8.2</a></span>
+        </div>
+        
+        
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
+        
+        
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+		</div>
+	</div>
+
+	
+	<div class="post-tools">
+		<div class="post-tools-container">
+	<ul class="article-tools-list">
+		<!-- TOC aside toggle -->
+		
+		<li class="right-bottom-tools page-aside-toggle">
+			<i class="fa-regular fa-outdent"></i>
+		</li>
+		
+
+		<!-- go comment -->
+		
+		<li class="go-comment">
+			<i class="fa-regular fa-comments"></i>
+		</li>
+		
+	</ul>
+</div>
+	</div>
+	
+
+	<div class="right-side-tools-container">
+		<div class="side-tools-container">
+	<ul class="hidden-tools-list">
+		<li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+			<i class="fa-regular fa-magnifying-glass-plus"></i>
+		</li>
+
+		<li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+			<i class="fa-regular fa-magnifying-glass-minus"></i>
+		</li>
+
+		<li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+			<i class="fa-regular fa-moon"></i>
+		</li>
+
+		<!-- rss -->
+		
+
+		
+
+		<li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+			<i class="fa-regular fa-arrow-down"></i>
+		</li>
+	</ul>
+
+	<ul class="visible-tools-list">
+		<li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+			<i class="fa-regular fa-cog fa-spin"></i>
+		</li>
+		
+		<li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+			<i class="arrow-up fas fa-arrow-up"></i>
+			<span class="percent"></span>
+		</li>
+		
+		
+	</ul>
+</div>
+	</div>
+
+	<div class="image-viewer-container">
+	<img src="">
+</div>
+
+	
+	<div class="search-pop-overlay">
+	<div class="popup search-popup">
+		<div class="search-header">
+			<span class="search-input-field-pre">
+				<i class="fa-solid fa-keyboard"></i>
+			</span>
+			<div class="search-input-container">
+				<input autocomplete="off" autocorrect="off" autocapitalize="off" placeholder="Search..." spellcheck="false" type="search" class="search-input">
+			</div>
+			<span class="popup-btn-close">
+				<i class="fa-solid fa-times"></i>
+			</span>
+		</div>
+		<div id="search-result">
+			<div id="no-result">
+				<i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+			</div>
+		</div>
+	</div>
+</div>
+	
+
+</main>
+
+
+
+<script src="/js/build/libs/Swup.min.js"></script>
+
+<script src="/js/build/libs/SwupSlideTheme.min.js"></script>
+
+<script src="/js/build/libs/SwupScriptsPlugin.min.js"></script>
+
+<script src="/js/build/libs/SwupProgressPlugin.min.js"></script>
+
+<script src="/js/build/libs/SwupScrollPlugin.min.js"></script>
+
+<script src="/js/build/libs/SwupPreloadPlugin.min.js"></script>
+
+<script>
+    const swup = new Swup({
+        plugins: [
+            new SwupScriptsPlugin({
+                optin: true,
+            }),
+            new SwupProgressPlugin(),
+            new SwupScrollPlugin({
+                offset: 80,
+            }),
+            new SwupSlideTheme({
+                mainElement: ".main-content-body",
+            }),
+            new SwupPreloadPlugin(),
+        ],
+        containers: ["#swup"],
+    });
+</script>
+
+
+
+
+	
+<script src="/js/build/tools/imageViewer.js" type="module"></script>
+
+<script src="/js/build/utils.js" type="module"></script>
+
+<script src="/js/build/main.js" type="module"></script>
+
+<script src="/js/build/layouts/navbarShrink.js" type="module"></script>
+
+<script src="/js/build/tools/scrollTopBottom.js" type="module"></script>
+
+<script src="/js/build/tools/lightDarkSwitch.js" type="module"></script>
+
+<script src="/js/build/layouts/categoryList.js" type="module"></script>
+
+
+
+    
+<script src="/js/build/tools/localSearch.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/build/tools/codeBlock.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/build/layouts/lazyload.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/build/tools/runtime.js"></script>
+
+    
+<script src="/js/build/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
+
+
+
+
+  
+<script src="/js/build/libs/Typed.min.js"></script>
+
+  
+<script src="/js/build/plugins/typed.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+    
+<script src="/js/build/tools/tocToggle.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/js/build/layouts/toc.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/js/build/plugins/tabs.js" type="module" data-swup-reload-script=""></script>
+
+
+
+
+<script src="/js/build/libs/moment-with-locales.min.js" data-swup-reload-script=""></script>
+
+
+<script src="/js/build/layouts/essays.js" type="module" data-swup-reload-script=""></script>
+
+
+
+
+
+	
+</body>
+
+</html>
