@@ -28,15 +28,14 @@
 <meta property="og:site_name" content="tatsukyou&#39;s blog">
 <meta property="og:description" content="毕设标题的灵感其实没啥灵感可言，导通知说要定个题先应付一下学院的流程，遂上网冲浪寻找合适的题材。因为之后打算继续读研，javaweb相关的课题对我后续套磁的帮助不大，手头上又没有资源跑深度学习，所以打算做一些小体量的机器学习。正好选题那段时间听说outlook套磁容易进垃圾邮箱里，便对 垃圾邮件的识别 产生了一点兴趣(希望不是给自己挖的一个大坑)。所以就在不到一个小时的时间里草率的定下了毕设的课题">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://tatsu-kyou.github.io/img/%E6%AF%95%E8%AE%BE%E6%9D%82%E8%AE%B0/%E6%A6%82%E5%BF%B5%E6%BC%82%E7%A7%BB.png">
 <meta property="og:image" content="https://tatsu-kyou.github.io/img/%E6%AF%95%E8%AE%BE%E6%9D%82%E8%AE%B0/email_sample.png">
 <meta property="article:published_time" content="2024-11-29T13:15:40.000Z">
-<meta property="article:modified_time" content="2024-12-25T14:57:50.815Z">
+<meta property="article:modified_time" content="2024-12-29T09:08:01.572Z">
 <meta property="article:author" content="tatsukyou">
 <meta property="article:tag" content="machine learning">
 <meta property="article:tag" content="NLP">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://tatsu-kyou.github.io/img/%E6%AF%95%E8%AE%BE%E6%9D%82%E8%AE%B0/%E6%A6%82%E5%BF%B5%E6%BC%82%E7%A7%BB.png">
+<meta name="twitter:image" content="https://tatsu-kyou.github.io/img/%E6%AF%95%E8%AE%BE%E6%9D%82%E8%AE%B0/email_sample.png">
     
     
     <!--- Icon Part-->
@@ -544,7 +543,7 @@
 
         <div class="statistics flex justify-around my-2.5">
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">13</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">14</div>
         <div class="label text-third-text-color text-sm">Tags</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
@@ -576,7 +575,7 @@
 			
 			
 			
-			<img src="/img/%E6%AF%95%E8%AE%BE%E6%9D%82%E8%AE%B0/cover.jpg" alt="毕设杂记" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75" />
+			<img src="/img/%E6%AF%95%E8%AE%BE%E6%9D%82%E8%AE%B0/head.jpg" alt="毕设杂记" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75" />
 			
 			<div class="w-full flex items-center absolute bottom-0 justify-start">
 				<h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-semibold backdrop-blur-lg rounded-xl border border-border-color ">毕设杂记</h1>
@@ -605,8 +604,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-12-25 22:57:50</span>
-            <span class="mobile">2024-12-25 22:57:50</span>
+            <span class="desktop">2024-12-29 17:08:01</span>
+            <span class="mobile">2024-12-29 17:08:01</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -648,12 +647,12 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>4.8k Words</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>3.3k Words</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fa-regular fa-clock"></i>&nbsp;<span>17 Mins</span>
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>12 Mins</span>
         </span>
     
     
@@ -680,44 +679,147 @@
 <li>电子邮件的协议格式有哪些？具体内容是什么？</li>
 <li>现在主流的垃圾邮件过滤器已经做到了什么程度？不同的模型又有哪些不足之处？现有的改进方法有哪些？</li>
 <li>数据集选什么样的比较合适？</li>
+<li>如何衡量一个模型的性能？</li>
 </ol>
 <p>个人认为解决了上述的几个问题，会对这个课题有一个较为全面的了解。这个课题并不是非常新颖，在中文期刊中都已经有相当多的研究成果出现，所以有很多的问题可以在 <strong>阅读文献</strong> 后找到答案。</p>
-<h2 id="文献阅读"><a href="#文献阅读" class="headerlink" title="文献阅读"></a>文献阅读</h2><h3 id="1-《个性化垃圾邮件过滤的扩展研究》"><a href="#1-《个性化垃圾邮件过滤的扩展研究》" class="headerlink" title="1.《个性化垃圾邮件过滤的扩展研究》"></a>1.《个性化垃圾邮件过滤的扩展研究》</h3><p>作者：徐丹丹，南京航空航天大学</p>
-<p>是一篇硕士论文，在文章的绪论部分对上述的若干问题有较为详尽的解释，其中对于<code>垃圾邮件的生命周期</code>, <code>电子邮件的生命周期</code>的概念解释的较为清晰，结合GPT内容整理如下：</p>
-<div class="code-container" data-rel="M"><figure class="iseeu highlight m"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>. 垃圾邮件的生命周期</span><br><span class="line">垃圾邮件是指未经请求发送给大量用户的广告或恶意邮件，通常用于推广产品、服务或执行恶意活动（如传播病毒、钓鱼攻击等）。垃圾邮件的生命周期包括几个阶段：</span><br><span class="line">    <span class="number">1.1</span> 域名注册阶段</span><br><span class="line">    攻击者选择域名：垃圾邮件发送者首先会选择并购买一个域名。这个域名通常看起来合法，但它们可能是用来建立一个虚假的网站，或者用于伪装成合法的公司或服务。通过注册域名，攻击者为垃圾邮件提供了一个发送的“地址”。</span><br><span class="line">    使用虚假信息：为了掩盖身份，垃圾邮件发送者可能会使用假信息注册域名，从而使追踪和防范变得更加困难。</span><br><span class="line">    <span class="number">1.2</span> DNS 名称解析和托管</span><br><span class="line">    DNS 配置：一旦攻击者注册了域名，他们需要配置DNS（域名系统）以便正确解析域名到特定的IP地址。DNS 服务器将负责将域名转换为计算机可识别的IP地址，指向一个Web 服务器。</span><br><span class="line">    网站托管：垃圾邮件发送者会搭建一个网站，该网站可能是一个恶意网站或虚假广告网站。这个网站可能包含恶意软件，或通过诱导用户点击链接进行钓鱼攻击。</span><br><span class="line">    <span class="number">1.3</span> 垃圾邮件的发送</span><br><span class="line">    僵尸网络：垃圾邮件的发送通常依赖于僵尸网络（botnets）。僵尸网络由大量受感染的计算机组成，攻击者通过它们来分发垃圾邮件。这些计算机通常是被恶意软件感染的，它们的所有者并不知道自己计算机的“角色”。</span><br><span class="line">    发送垃圾邮件：攻击者通过这些受控的计算机发送大量垃圾邮件，目的是让受害者点击邮件中的链接，访问恶意网站或下载恶意文件。</span><br><span class="line">    <span class="number">1.4</span> 诱使用户点击链接</span><br><span class="line">    钓鱼攻击：垃圾邮件中常常会嵌入恶意链接，这些链接指向伪装成合法网站的页面，目的是窃取用户个人信息、信用卡信息等。</span><br><span class="line">    诱导点击：通过各种手段（如假冒银行邮件、虚假优惠信息等），攻击者试图诱导用户点击邮件中的链接。</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>. 电子邮件的生命周期</span><br><span class="line">电子邮件的生命周期描述了从邮件创建到最终传递或丢弃的全过程。它通常涉及以下几个主要阶段：</span><br><span class="line">    <span class="number">2.1</span> 邮件创建</span><br><span class="line">    编写邮件：用户在电子邮件客户端（如Outlook、Gmail等）中编写一封邮件。邮件包括收件人、发件人、主题、正文内容以及附件。</span><br><span class="line">    发送邮件：用户点击发送按钮后，邮件通过邮件客户端发送到邮件服务器。</span><br><span class="line">    <span class="number">2.2</span> 邮件传输</span><br><span class="line">    发件人邮件服务器：邮件首先到达发件人的邮件服务器（通常是SMTP服务器），这是电子邮件传输的起点。</span><br><span class="line">    邮件路由：邮件服务器通过DNS查找目标邮件服务器的IP地址，并根据邮件的目的地进行路由。邮件可能经过多个中转服务器，特别是在不同域名之间发送邮件时。</span><br><span class="line">    中继服务器：如果目标邮件服务器不可用，邮件会通过中继服务器转发，直到到达最终目标服务器。</span><br><span class="line">    <span class="number">2.3</span> 邮件接收</span><br><span class="line">    接收方邮件服务器：邮件最终到达接收方的邮件服务器（通常是POP3或IMAP服务器）。接收方邮件服务器负责存储和管理邮件。</span><br><span class="line">    反垃圾邮件过滤：接收方邮件服务器会进行垃圾邮件过滤，检查邮件是否符合垃圾邮件的特征。如果是垃圾邮件，邮件会被拦截并放入垃圾邮件文件夹。</span><br><span class="line">    <span class="number">2.4</span> 邮件阅读</span><br><span class="line">    接收用户读取邮件：邮件最终到达接收方的电子邮件客户端，用户可以查看邮件内容。此时，邮件可能已经被标记为“已读”。</span><br><span class="line">    邮件响应：如果邮件是正常邮件，接收方可能会回复、转发邮件，或执行其他操作。如果邮件是垃圾邮件，接收方可能会选择标记为垃圾邮件或删除。</span><br><span class="line">    <span class="number">2.5</span> 邮件存档或删除</span><br><span class="line">    存档邮件：用户可以将重要邮件存档，以便以后查阅。</span><br><span class="line">    删除邮件：不再需要的邮件会被删除，垃圾邮件通常在这一阶段被清除。</span><br><span class="line">    <span class="number">2.6</span> 邮件丢失或失败传递</span><br><span class="line">    邮件失败传递：如果由于网络故障或邮件服务器问题，邮件无法送达目标地址，邮件系统会发送“传递失败”通知。</span><br><span class="line">    丢失邮件：在极少数情况下，由于邮件系统故障或配置错误，邮件可能在传输过程中丢失。</span><br></pre></td></tr></table></figure></div>
-
-<p>此外，该文章还提出了<code>用户个性化过滤方案</code>，在传统的通用过滤器的筛选结果的基础上，基于多任务学习原理设计了两个相互学习的过滤器分别用于收件箱和垃圾箱的邮件的再过滤。这样做可以修正第一次过滤的结果，解决类不平均问题和用户对垃圾邮件的定义差异问题。</p>
-<br>
-
-<p>还有一个我比较在一的点，<code>概念漂移</code>，<code>广义虚漂移</code>，这个概念在目前看到的几篇文献中并未被提出。GPT给出的解释是：<font color='#FF6F91'>模型在初期训练时可能能够很好地拟合数据，但随着环境的动态变化，原本用于训练的数据的特征和标签之间的关系可能不再适用，从而导致模型的性能下降。</font>我的通俗的理解就是，因为我们要解决的问题是一个会随着时间变化的问题，用固定的数据集跑出来的模型它学习到的‘概念’是固定的，所以随着时间的推移，慢慢的就会变得不那么适用。这也是因为机器学习的 <code>强假设前提</code> ：数据的统计性质（均值、方差）是保持不变的。但实际上，统计性质是可能会随着时间发生波动的。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/img/%E6%AF%95%E8%AE%BE%E6%9D%82%E8%AE%B0/%E6%A6%82%E5%BF%B5%E6%BC%82%E7%A7%BB.png"
-                      alt="概念漂移"
-                ></p>
-<p>紧接着又提出了一个急需解决的问题：<code>类不平衡问题</code>，不过我感觉对于<code>二分类问题</code> 这种情况还是比较常见的，正负样本的比例不是1：1都算不平衡？感觉只要不是很严重的偏离，比如1：100，可以暂时先不管它。</p>
-<h3 id="2-加权贝叶斯邮件过滤方法研究"><a href="#2-加权贝叶斯邮件过滤方法研究" class="headerlink" title="2.加权贝叶斯邮件过滤方法研究"></a>2.加权贝叶斯邮件过滤方法研究</h3><p>作者：张远，哈尔滨工业大学</p>
-<p>同样是一篇硕士论文，这篇文章主要给我带来了<code>指纹向量特征编码</code>、<code>加权</code>等几个非常吸引我的点。回头看看能不能把他实现出来。</p>
-<p>(24-12-18)回头了，现在看来这篇的做法好像有一点超前了，虽然说是用到了加权思想，但其实我是没有看懂ta怎么用的加权的，对邮件头做和邮件体一样的特征提取的话，感觉就破坏了他的结构了。我认为对邮件头的处理可能使用 <strong>基于规则的过滤方法</strong> 会更合理一些，但是可行性还有待验证。</p>
-<p>(24-12-18)还有就是，<font color='#ac7c26'>这篇文章在处理指纹向量特征编码时，将文档切割成6-8个字符的小块</font>。串长越长计算指纹向量的时间也就越久，所以理论上来说是可以显著的提高运算效率的，但是这样操作会不会破坏文档内容的连续性作者并没有验证，也就是这样操作的合理性没有得到充分的证实，所以这个做法还有有待考究的。</p>
-<h3 id="3-基于规则的垃圾邮件过滤算法比较研究"><a href="#3-基于规则的垃圾邮件过滤算法比较研究" class="headerlink" title="3.基于规则的垃圾邮件过滤算法比较研究"></a>3.基于规则的垃圾邮件过滤算法比较研究</h3><p>这是一篇学报，篇幅较短，主要就是告诉我们干了一件事情得到了什么结果，其他的细节大家自己猜吧！据作者说，ta们在<strong>WEKA平台</strong>上基于PUI预料库比较了<code>Ripper算法</code>， <code>C4.5决策树</code>， <code>AdaBoost算法</code>等三个算法的性能，发现<code>AdaBoost算法</code>的性能最好。<font color='#E07250'>ta们用的评价指标是<code>准确率Precison</code>和<code>召回率Recall</code>。</font></p>
-<h2 id="初步实现"><a href="#初步实现" class="headerlink" title="初步实现"></a>初步实现</h2><p>如果只是单纯的实现一个基于NBC的垃圾邮件分类器的话其实是一个很简单的课题，在不考虑性能、内存的情况下，用一个极小的数据集训练的分类器加上python已经很好的集成了常见的机器学习的模型，通常数十行代码就可以搞定。接下来的代码就是一个简单的例子。</p>
-<div class="code-container" data-rel="Py"><figure class="iseeu highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">from</span> nltk.tokenize <span class="keyword">import</span> word_tokenize</span><br><span class="line"><span class="keyword">from</span> sklearn.feature_extraction.text <span class="keyword">import</span> TfidfVectorizer</span><br><span class="line"><span class="keyword">from</span> sklearn.naive_bayes <span class="keyword">import</span> MultinomialNB</span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split</span><br><span class="line"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> classification_report</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数据集的地址</span></span><br><span class="line">spam_dir = <span class="string">&#x27;./date2/spam/&#x27;</span></span><br><span class="line">ham_dir = <span class="string">&#x27;./date2/ham/&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 用于存储数据和标签，标签和内容是一一对应的</span></span><br><span class="line">data = []</span><br><span class="line">labels = []</span><br><span class="line"></span><br><span class="line"><span class="comment"># read datasets</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">read_data</span>(<span class="params">spam_dir, ham_dir</span>):</span><br><span class="line">    <span class="keyword">for</span> filename <span class="keyword">in</span> os.listdir(spam_dir):</span><br><span class="line">        <span class="keyword">with</span> <span class="built_in">open</span>(os.path.join (spam_dir, filename), <span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">            content = f.read().strip()</span><br><span class="line">            data.append(content)</span><br><span class="line">            labels.append(<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> filename <span class="keyword">in</span> os.listdir(ham_dir):</span><br><span class="line">        <span class="keyword">with</span> <span class="built_in">open</span>(os.path.join (ham_dir, filename), <span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">            content = f.read().strip()</span><br><span class="line">            data.append(content)</span><br><span class="line">            labels.append(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 英文分词器</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">english_tokenizer</span>(<span class="params">text</span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">list</span>(word_tokenize(text))</span><br><span class="line"></span><br><span class="line">read_data(spam_dir, ham_dir)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用TF-IDF向量化文本</span></span><br><span class="line">vectorizer = TfidfVectorizer(tokenizer=english_tokenizer, stop_words=<span class="literal">None</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将文本转化为TF-IDF矩阵</span></span><br><span class="line">X = vectorizer.fit_transform(data)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将标签转换为数组</span></span><br><span class="line">y = labels</span><br><span class="line"></span><br><span class="line"><span class="comment"># 划分训练集和测试集</span></span><br><span class="line">X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=<span class="number">0.3</span>, random_state=<span class="number">42</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用朴素贝叶斯分类器训练模型</span></span><br><span class="line">classifier = MultinomialNB()</span><br><span class="line">classifier.fit(X_train, y_train)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 在测试集上进行预测</span></span><br><span class="line">y_pred = classifier.predict(X_test)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打印分类报告</span></span><br><span class="line"><span class="built_in">print</span>(classification_report(y_test, y_pred))</span><br></pre></td></tr></table></figure></div>
-<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Outcome:</span><br><span class="line">              precision    recall  f1-score   support</span><br><span class="line"></span><br><span class="line">           0       0.80      1.00      0.89         8</span><br><span class="line">           1       1.00      0.71      0.83         7</span><br><span class="line"></span><br><span class="line">    accuracy                           0.87        15</span><br><span class="line">   macro avg       0.90      0.86      0.86        15</span><br><span class="line">weighted avg       0.89      0.87      0.86        15</span><br></pre></td></tr></table></figure></div>
-<p>需要注意这里的数据集并非中文垃圾邮件数据集，而是一个简化的英文邮件数据集，并且只保留了邮件的正文部分。阅读文献我们会发现<font color='#FF6F91'>一封能在互联网上流通的邮件通常有：收件人(To)、抄送(CC)、密送(BCC)、主题(Subject)、正文(Body)、签名(Signature)、附件(Attachment)等数个部分构成</font>。这显然是不合理的，但是作为一个初代分类器，这样就已经非常nice了！接下来的任务就是在这基础上慢慢地做大、做强~さあ、行くぞ！</p>
-<h2 id="改用更大的数据集！"><a href="#改用更大的数据集！" class="headerlink" title="改用更大的数据集！"></a>改用更大的数据集！</h2><p>上述的始め数据集只有正负例各25个，接下来来个大的<font color='	#00C5CD'><strong>trec06c</strong></font>( <a class="link"   target="_blank" rel="noopener" href="https://plg.uwaterloo.ca/~gvcormac/treccorpus06/" >https://plg.uwaterloo.ca/~gvcormac/treccorpus06/<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> )。该数据集一共64,620 个文件，216 个文件夹，其中正样本数21766个，负样本数42454个。而且这个数据集是一个由不带附件的原始邮件组成数据集。邮件头和邮件体有时采用了不同的编码方式，所以需要对邮件头和邮件体进行解码。比如下面列出的一封邮件：</p>
-<div class="code-container" data-rel="Txt"><figure class="iseeu highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">Received: from jdl.ac.cn ([159.226.42.8])</span><br><span class="line">	by spam-gw.ccert.edu.cn (MIMEDefang) with ESMTP id j7C1ceuQ019050</span><br><span class="line">	for &lt;shi@ccert.edu.cn&gt;; Sun, 14 Aug 2005 10:02:01 +0800 (CST)</span><br><span class="line">Received: (qmail 5448 invoked from network); Sun, 14 Aug 2005 02:12:48 -0000</span><br><span class="line">Received: from unknown (HELO d47db5334f2a479) (192.168.0.233)</span><br><span class="line">  by 159.226.42.8 with SMTP; Sun, 14 Aug 2005 02:12:48 -0000</span><br><span class="line">Message-ID: &lt;000b01c59ee0$a1f666b0$e900a8c0@d47db5334f2a479&gt;</span><br><span class="line">From: &quot;pan&quot; &lt;pan@jdl.ac.cn&gt;</span><br><span class="line">To: shi@ccert.edu.cn</span><br><span class="line">Subject: =?gb2312?B?ofEgzsrSu7K/zrrX2s3ytcS159Oww/uzxg==?=</span><br><span class="line">Date: Sun, 14 Aug 2005 10:16:47 +0800</span><br><span class="line">MIME-Version: 1.0</span><br><span class="line">Content-Type: text/plain;</span><br><span class="line">	charset=&quot;gb2312&quot;</span><br><span class="line">Content-Transfer-Encoding: base64</span><br><span class="line">X-Priority: 3</span><br><span class="line">X-MSMail-Priority: Normal</span><br><span class="line">X-Mailer: Microsoft Outlook Express 6.00.2800.1506</span><br><span class="line">X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2800.1506</span><br><span class="line"></span><br><span class="line">讲的是孔子后人的故事。一个老领导回到家乡，跟儿子感情不和，跟贪财的孙子孔为本和睦。</span><br><span class="line">老领导的弟弟魏宗万是赶马车的。</span><br><span class="line">有个洋妞大概是考察民俗的，在他们家过年。</span><br><span class="line">孔为本总想出国，被爷爷教育了。</span><br><span class="line">最后，一家人基本和解。</span><br><span class="line">顺便问另一类电影，北京青年电影制片厂的。中越战背景。一军人被介绍了一个对象，去相亲。女方是军队医院的护士，犹豫不决，总是在回忆战场上负伤的男友，好像还没死。最后</span><br><span class="line">男方表示理解，归队了。</span><br></pre></td></tr></table></figure></div>
-<p>信息量非常大，在网上可以看到一些博主在训练模型时，直接将邮件头全部砍掉，只保留邮件体部分，将这个完整的数据集简化为同上的mini数据集。这怎么看都是不对的！哪怕它们跑出来的结果再好。<font color='	#00C5CD'><strong>我们要做的过滤器应该是同时考虑邮件头和邮件体两部分的内容的逻辑上完整的过滤器。</strong></font>这一部分的参考了<a href="#2%E5%8A%A0%E6%9D%83%E8%B4%9D%E5%8F%B6%E6%96%AF%E9%82%AE%E4%BB%B6%E8%BF%87%E6%BB%A4%E6%96%B9%E6%B3%95%E7%A0%94%E7%A9%B6">这篇</a>，所以在训练之前，需要搞清楚一封正常的电子邮件是由哪几部分构成的。</p>
-<h2 id="先搞清楚，电子邮件！"><a href="#先搞清楚，电子邮件！" class="headerlink" title="先搞清楚，电子邮件！"></a>先搞清楚，电子邮件！</h2><p>这部分的内容比较杂，我就放一些查到的资料把。</p>
-<div class="code-container" data-rel="Md"><figure class="iseeu highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 一封能在互联网上传播的电子邮件应包含的内容</span></span><br><span class="line"></span><br><span class="line">根据 <span class="strong">**RFC 822**</span> 和 <span class="strong">**MIME**</span> 标准，一封标准的电子邮件应包括以下几个组成部分：</span><br><span class="line"></span><br><span class="line"><span class="section">## 1. 邮件头部 (Headers)</span></span><br><span class="line">邮件头部包含了关于邮件本身和邮件通信过程的元信息。常见的邮件头部字段包括：</span><br><span class="line"></span><br><span class="line"><span class="section">### 1.1 发件人 (From)</span></span><br><span class="line"><span class="bullet">-</span> 指示邮件的发送者。</span><br><span class="line"><span class="bullet">-</span> 格式：<span class="code">`From: sender@example.com`</span></span><br><span class="line"><span class="bullet">-</span> 可以包括发件人的姓名，例如：<span class="code">`From: &quot;John Doe&quot; &lt;john.doe@example.com&gt;`</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 1.2 收件人 (To)</span></span><br><span class="line"><span class="bullet">-</span> 指定邮件的主要接收者。</span><br><span class="line"><span class="bullet">-</span> 格式：<span class="code">`To: recipient@example.com`</span></span><br><span class="line"><span class="bullet">-</span> 可以包括多个收件人，用逗号分隔。</span><br><span class="line"></span><br><span class="line"><span class="section">### 1.3 抄送 (CC) 和 密送 (BCC)</span></span><br><span class="line"><span class="bullet">-</span> <span class="strong">**抄送**</span>（CC）表示同时发送给其他人，而<span class="strong">**密送**</span>（BCC）则是发送给其他人但不公开其他收件人的地址。</span><br><span class="line"><span class="bullet">-</span> 格式：<span class="code">`CC: cc1@example.com, cc2@example.com`</span></span><br><span class="line"><span class="bullet">-</span> 格式：<span class="code">`BCC: bcc@example.com`</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 1.4 主题 (Subject)</span></span><br><span class="line"><span class="bullet">-</span> 邮件的主题行，简洁明了地概述邮件内容。</span><br><span class="line"><span class="bullet">-</span> 格式：<span class="code">`Subject: Meeting agenda for next week`</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 1.5 日期 (Date)</span></span><br><span class="line"><span class="bullet">-</span> 指明邮件的发送日期和时间。</span><br><span class="line"><span class="bullet">-</span> 格式：<span class="code">`Date: Wed, 21 Aug 2024 14:30:00 +0000`</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 1.6 邮件标识 (Message-ID)</span></span><br><span class="line"><span class="bullet">-</span> 每封邮件都会有一个唯一的标识符，帮助邮件系统跟踪邮件。</span><br><span class="line"><span class="bullet">-</span> 格式：<span class="code">`Message-ID: &lt;1234567890@example.com&gt;`</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 1.7 回复到 (Reply-To)</span></span><br><span class="line"><span class="bullet">-</span> 用于指定回复邮件时的目标地址，如果与发件人地址不同。</span><br><span class="line"><span class="bullet">-</span> 格式：<span class="code">`Reply-To: reply@example.com`</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 1.8 其他头部字段</span></span><br><span class="line"><span class="bullet">-</span> <span class="strong">**MIME-Version**</span>：标明邮件采用的 MIME 版本，通常是 <span class="code">`MIME-Version: 1.0`</span>。</span><br><span class="line"><span class="bullet">-</span> <span class="strong">**Content-Type**</span>：指定邮件内容的类型（如文本、HTML、附件等），在 MIME 邮件中非常重要。</span><br><span class="line"><span class="bullet">-</span> <span class="strong">**Content-Transfer-Encoding**</span>：描述邮件内容的编码方式（如 Base64 或 Quoted-Printable）。</span><br><span class="line"></span><br><span class="line"><span class="section">## 2. 邮件正文 (Body)</span></span><br><span class="line">邮件的正文是邮件的核心部分，包含具体的交流内容。正文的格式会根据 <span class="strong">**Content-Type**</span> 头部字段进行不同的处理。</span><br><span class="line"></span><br><span class="line"><span class="section">### 2.1 MIME 邮件的编码</span></span><br><span class="line"><span class="bullet">-</span> 如果邮件包含非 ASCII 字符或附件，它将使用 MIME（Multipurpose Internet Mail Extensions）标准进行编码，常见的编码方式有：</span><br><span class="line"><span class="bullet">  -</span> <span class="strong">**Base64**</span>：用于编码二进制数据（如图像、文档等附件）。</span><br><span class="line"><span class="bullet">  -</span> <span class="strong">**Quoted-Printable**</span>：用于编码较为简单的文本数据，避免控制字符导致邮件乱码。</span><br><span class="line">  </span><br><span class="line"><span class="section">### 2.2 文本邮件 (Text)</span></span><br><span class="line"><span class="bullet">-</span> <span class="strong">**纯文本**</span>（text/plain）邮件的正文内容通常是不带格式的文本。</span><br><span class="line"><span class="bullet">-</span> <span class="strong">**格式**</span>： <span class="code">`Content-Type: text/plain; charset=&quot;UTF-8&quot;`</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 2.3 HTML 邮件 (HTML)</span></span><br><span class="line"><span class="bullet">-</span> <span class="strong">**HTML 格式**</span>（text/html）邮件允许在正文中嵌入格式化文本、链接、图像等内容。</span><br><span class="line"><span class="bullet">-</span> <span class="strong">**格式**</span>： <span class="code">`Content-Type: text/html; charset=&quot;UTF-8&quot;`</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 2.4 多部分邮件 (Multipart)</span></span><br><span class="line"><span class="bullet">-</span> 如果邮件包含多个部分（例如，文本和附件），则会使用 <span class="strong">**multipart**</span> 类型的内容格式。</span><br><span class="line"><span class="bullet">-</span> <span class="strong">**格式**</span>：<span class="code">`Content-Type: multipart/mixed; boundary=&quot;boundary_string&quot;`</span></span><br><span class="line"></span><br><span class="line"><span class="section">## 3. 附件 (Attachments)</span></span><br><span class="line"><span class="bullet">-</span> 邮件可以包含附件文件，附件将通过 MIME 编码方式嵌入到邮件正文中。</span><br><span class="line"><span class="bullet">-</span> 每个附件都会有一个独立的内容描述，如 <span class="code">`Content-Type`</span> 和 <span class="code">`Content-Disposition`</span>。</span><br><span class="line"><span class="bullet">-</span> 示例：</span><br><span class="line">  <span class="code">```text</span></span><br><span class="line"><span class="code">  Content-Type: application/pdf; name=&quot;file.pdf&quot;</span></span><br><span class="line"><span class="code">  Content-Disposition: attachment; filename=&quot;file.pdf&quot;</span></span><br><span class="line"><span class="code">  Content-Transfer-Encoding: base64```</span></span><br><span class="line">  </span><br></pre></td></tr></table></figure></div>
+<h2 id="先搞清楚，电子邮件！"><a href="#先搞清楚，电子邮件！" class="headerlink" title="先搞清楚，电子邮件！"></a>先搞清楚，电子邮件！</h2><p>这部分的内容比较杂，我就放一些查到的资料把。一封能在互联网上传播的电子邮件应包含的内容：</p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
                      data-src="/img/%E6%AF%95%E8%AE%BE%E6%9D%82%E8%AE%B0/email_sample.png"
                       alt="email_sample"
                 ></p>
-<p>由上述的种种可以看出，email的头中蕴含这丰富的信息可以用于判断邮件是否为spam，但是它和邮件体带来的信息又是不同的。</p>
+<p>根据 <strong>RFC 822</strong> 和 <strong>MIME</strong> 标准，一封标准的电子邮件应包括以下几个组成部分：</p>
+<h3 id="1-邮件头部-Headers"><a href="#1-邮件头部-Headers" class="headerlink" title="1. 邮件头部 (Headers)"></a>1. 邮件头部 (Headers)</h3><p>邮件头部包含了关于邮件本身和邮件通信过程的元信息。常见的邮件头部字段包括：</p>
+<h4 id="1-1-发件人-From"><a href="#1-1-发件人-From" class="headerlink" title="1.1 发件人 (From)"></a>1.1 发件人 (From)</h4><ul>
+<li>指示邮件的发送者。</li>
+<li>格式：<code>From: sender@example.com</code></li>
+<li>可以包括发件人的姓名，例如：<code>From: &quot;John Doe&quot; &lt;john.doe@example.com&gt;</code></li>
+</ul>
+<h4 id="1-2-收件人-To"><a href="#1-2-收件人-To" class="headerlink" title="1.2 收件人 (To)"></a>1.2 收件人 (To)</h4><ul>
+<li>指定邮件的主要接收者。</li>
+<li>格式：<code>To: recipient@example.com</code></li>
+<li>可以包括多个收件人，用逗号分隔。</li>
+</ul>
+<h4 id="1-3-抄送-CC-和-密送-BCC"><a href="#1-3-抄送-CC-和-密送-BCC" class="headerlink" title="1.3 抄送 (CC) 和 密送 (BCC)"></a>1.3 抄送 (CC) 和 密送 (BCC)</h4><ul>
+<li><strong>抄送</strong>（CC）表示同时发送给其他人，而<strong>密送</strong>（BCC）则是发送给其他人但不公开其他收件人的地址。</li>
+<li>格式：<code>CC: cc1@example.com, cc2@example.com</code></li>
+<li>格式：<code>BCC: bcc@example.com</code></li>
+</ul>
+<h4 id="1-4-主题-Subject"><a href="#1-4-主题-Subject" class="headerlink" title="1.4 主题 (Subject)"></a>1.4 主题 (Subject)</h4><ul>
+<li>邮件的主题行，简洁明了地概述邮件内容。</li>
+<li>格式：<code>Subject: Meeting agenda for next week</code></li>
+</ul>
+<h4 id="1-5-日期-Date"><a href="#1-5-日期-Date" class="headerlink" title="1.5 日期 (Date)"></a>1.5 日期 (Date)</h4><ul>
+<li>指明邮件的发送日期和时间。</li>
+<li>格式：<code>Date: Wed, 21 Aug 2024 14:30:00 +0000</code></li>
+</ul>
+<h4 id="1-6-邮件标识-Message-ID"><a href="#1-6-邮件标识-Message-ID" class="headerlink" title="1.6 邮件标识 (Message-ID)"></a>1.6 邮件标识 (Message-ID)</h4><ul>
+<li>每封邮件都会有一个唯一的标识符，帮助邮件系统跟踪邮件。</li>
+<li>格式：<code>Message-ID: &lt;1234567890@example.com&gt;</code></li>
+</ul>
+<h4 id="1-7-回复到-Reply-To"><a href="#1-7-回复到-Reply-To" class="headerlink" title="1.7 回复到 (Reply-To)"></a>1.7 回复到 (Reply-To)</h4><ul>
+<li>用于指定回复邮件时的目标地址，如果与发件人地址不同。</li>
+<li>格式：<code>Reply-To: reply@example.com</code></li>
+</ul>
+<h4 id="1-8-其他头部字段"><a href="#1-8-其他头部字段" class="headerlink" title="1.8 其他头部字段"></a>1.8 其他头部字段</h4><ul>
+<li><strong>MIME-Version</strong>：标明邮件采用的 MIME 版本，通常是 <code>MIME-Version: 1.0</code>。</li>
+<li><strong>Content-Type</strong>：指定邮件内容的类型（如文本、HTML、附件等），在 MIME 邮件中非常重要。</li>
+<li><strong>Content-Transfer-Encoding</strong>：描述邮件内容的编码方式（如 Base64 或 Quoted-Printable）。</li>
+</ul>
+<h3 id="2-邮件正文-Body"><a href="#2-邮件正文-Body" class="headerlink" title="2. 邮件正文 (Body)"></a>2. 邮件正文 (Body)</h3><p>邮件的正文是邮件的核心部分，包含具体的交流内容。正文的格式会根据 <strong>Content-Type</strong> 头部字段进行不同的处理。</p>
+<h4 id="2-1-MIME-邮件的编码"><a href="#2-1-MIME-邮件的编码" class="headerlink" title="2.1 MIME 邮件的编码"></a>2.1 MIME 邮件的编码</h4><ul>
+<li>如果邮件包含非 ASCII 字符或附件，它将使用 MIME（Multipurpose Internet Mail Extensions）标准进行编码，常见的编码方式有：<ul>
+<li><strong>Base64</strong>：用于编码二进制数据（如图像、文档等附件）。</li>
+<li><strong>Quoted-Printable</strong>：用于编码较为简单的文本数据，避免控制字符导致邮件乱码。</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-2-文本邮件-Text"><a href="#2-2-文本邮件-Text" class="headerlink" title="2.2 文本邮件 (Text)"></a>2.2 文本邮件 (Text)</h4><ul>
+<li><strong>纯文本</strong>（text&#x2F;plain）邮件的正文内容通常是不带格式的文本。</li>
+<li><strong>格式</strong>： <code>Content-Type: text/plain; charset=&quot;UTF-8&quot;</code></li>
+</ul>
+<h4 id="2-3-HTML-邮件-HTML"><a href="#2-3-HTML-邮件-HTML" class="headerlink" title="2.3 HTML 邮件 (HTML)"></a>2.3 HTML 邮件 (HTML)</h4><ul>
+<li><strong>HTML 格式</strong>（text&#x2F;html）邮件允许在正文中嵌入格式化文本、链接、图像等内容。</li>
+<li><strong>格式</strong>： <code>Content-Type: text/html; charset=&quot;UTF-8&quot;</code></li>
+</ul>
+<h4 id="2-4-多部分邮件-Multipart"><a href="#2-4-多部分邮件-Multipart" class="headerlink" title="2.4 多部分邮件 (Multipart)"></a>2.4 多部分邮件 (Multipart)</h4><ul>
+<li>如果邮件包含多个部分（例如，文本和附件），则会使用 <strong>multipart</strong> 类型的内容格式。</li>
+<li><strong>格式</strong>：<code>Content-Type: multipart/mixed; boundary=&quot;boundary_string&quot;</code></li>
+</ul>
+<h3 id="3-附件-Attachments"><a href="#3-附件-Attachments" class="headerlink" title="3. 附件 (Attachments)"></a>3. 附件 (Attachments)</h3><ul>
+<li>邮件可以包含附件文件，附件将通过 MIME 编码方式嵌入到邮件正文中。</li>
+<li>每个附件都会有一个独立的内容描述，如 <code>Content-Type</code> 和 <code>Content-Disposition</code>。</li>
+<li>示例：<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Content-Type: application/pdf; name=&quot;file.pdf&quot;</span><br><span class="line">Content-Disposition: attachment; filename=&quot;file.pdf&quot;</span><br><span class="line">Content-Transfer-Encoding: base64</span><br></pre></td></tr></table></figure></div>
+由上述的种种可以看出，email的头中蕴含这丰富的信息可以用于判断邮件是否为spam，但是它和邮件体带来的信息又是不同的。</li>
+</ul>
+<h2 id="什么是垃圾邮件？"><a href="#什么是垃圾邮件？" class="headerlink" title="什么是垃圾邮件？"></a>什么是垃圾邮件？</h2><p>根据中国互联网协会发布的《反垃圾邮件规范》中对垃圾邮件的界定：</p>
+<ol>
+<li>收件人事先没有提出要求或者同意接收的广告、电子刊物、各种形式的宣传品等宣传性的电子邮件；</li>
+<li>收件人无法拒收的电子邮件；</li>
+<li>隐藏发件人身份、地址、标题等信息的电子邮件；</li>
+<li>含有虚假的信息源、发件人、路由等信息的电子邮件。</li>
+</ol>
+<p>垃圾邮件又通常具备以下特征：</p>
+<ol>
+<li>以商业传播或恶意手段的传播。</li>
+<li>使用不真实的发件人地址。</li>
+<li>匿名或不明来源。</li>
+<li>附有可疑的链接或附件。</li>
+<li>有较多的语法错误、拼写错误以及格式不规范等问题。</li>
+</ol>
+<p>垃圾邮件的定义并非绝对，常是因人而异的。一封邮件对于用户A而言是垃圾邮件，对于用户B而言不一定是垃圾邮件。因此在设计垃圾邮件过滤系统时，需要学习不同用户的需求差异。也即该系统需要具备<font color='#E07250'>用户性</font>。</p>
+<h2 id="电子邮件的传输协议"><a href="#电子邮件的传输协议" class="headerlink" title="电子邮件的传输协议"></a>电子邮件的传输协议</h2><p>电子邮件的发展已经经过了较长的时间，这其中演变制定出了很多高效可行的网络传输协议，包括：</p>
+<h3 id="SMTP-Simple-Mail-Transfer-Protocol"><a href="#SMTP-Simple-Mail-Transfer-Protocol" class="headerlink" title="SMTP(Simple Mail Transfer Protocol)"></a>SMTP(Simple Mail Transfer Protocol)</h3><ul>
+<li>SMTP 是用于电子邮件发送的协议，负责将电子邮件从发件人邮箱传输到收件人邮箱的邮件服务器。SMTP 主要用于邮件的发送和转发，而不负责存储邮件。</li>
+</ul>
+<h3 id="POP3-Post-Office-Protocol-3"><a href="#POP3-Post-Office-Protocol-3" class="headerlink" title="POP3(Post Office Protocol 3)"></a>POP3(Post Office Protocol 3)</h3><ul>
+<li>POP3 是用于从邮件服务器接收电子邮件的协议。它允许用户下载邮件并将邮件存储在本地计算机上。POP3 的工作方式是将邮件从服务器下载后，通常会删除服务器上的邮件副本。</li>
+</ul>
+<h3 id="IMAP-Internet-Message-Access-Protocol"><a href="#IMAP-Internet-Message-Access-Protocol" class="headerlink" title="IMAP(Internet Message Access Protocol)"></a>IMAP(Internet Message Access Protocol)</h3><ul>
+<li>IMAP 也是一种接收邮件的协议，但与 POP3 不同，IMAP 允许邮件保留在服务器上，并且支持多设备间同步。用户可以从任何设备上访问邮件，并查看邮件的实时状态（如已读、未读、标记等）</li>
+</ul>
+<h3 id="MIME-Multipurpose-Internet-Mail-Extensions"><a href="#MIME-Multipurpose-Internet-Mail-Extensions" class="headerlink" title="MIME(Multipurpose Internet Mail Extensions)"></a>MIME(Multipurpose Internet Mail Extensions)</h3><ul>
+<li>MIME 是扩展电子邮件功能的协议，允许电子邮件发送多种类型的内容，如文本、图片、音频、视频等。MIME 是 SMTP 的一种补充，定义了如何编码多种类型的内容，以便通过电子邮件传输。</li>
+</ul>
+<h3 id="ESMTP-Enhanced-SMTP"><a href="#ESMTP-Enhanced-SMTP" class="headerlink" title="ESMTP(Enhanced SMTP)"></a>ESMTP(Enhanced SMTP)</h3><ul>
+<li>ESMTP 是对 SMTP 协议的扩展，增加了更多的功能和特性，如身份验证（SMTP AUTH）和加密等。它向SMTP协议添加了一些可选功能，以支持现代的电子邮件服务。</li>
+</ul>
+<h3 id="DSN-Delivery-Status-Notification"><a href="#DSN-Delivery-Status-Notification" class="headerlink" title="DSN(Delivery Status Notification)"></a>DSN(Delivery Status Notification)</h3><ul>
+<li>DSN 是一种标准机制，用于告知发件人邮件的传送状态，包括成功、延迟或失败等。它是 SMTP 协议的一部分，用于邮件传递过程中状态反馈。</li>
+</ul>
+<h2 id="当前主流的垃圾邮件过滤方法"><a href="#当前主流的垃圾邮件过滤方法" class="headerlink" title="当前主流的垃圾邮件过滤方法"></a>当前主流的垃圾邮件过滤方法</h2><p>就技术层面而言，当前的垃圾邮件过滤方法主要分为三大类：</p>
+<ol>
+<li>基于IP的过滤。<ul>
+<li>黑白名单</li>
+<li>服务器端控制</li>
+<li>安全认证机制</li>
+</ul>
+</li>
+<li>基于内容的过滤<ul>
+<li>基于规则的方法：<ul>
+<li>Ripper、决策树、Booting决策树、粗糙集</li>
+</ul>
+</li>
+<li>基于统计的方法：<ul>
+<li>Bayes、KNN、SVM、Winnow</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>基于行为&#x2F;SMTP协议的过滤</li>
+</ol>
+<p>这些方法各有优势和局限性。基于规则的内容过滤方法虽然需要专家精心制定规则，准确性较高，易于理解，但维护成本较高，且规则的公开性使得垃圾邮件发送者能够学习并规避这些规则。而基于统计学习的方法虽然生成的规则难以直观理解，但能够在一定程度上规避上述问题，因为它们是通过大量数据学习得到的“隐式规则”。</p>
+<h2 id="数据集的选择"><a href="#数据集的选择" class="headerlink" title="数据集的选择"></a>数据集的选择</h2><h3 id="1-trec2006c"><a href="#1-trec2006c" class="headerlink" title="1. trec2006c"></a>1. trec2006c</h3><ul>
+<li>中文邮件集，每一封邮件都由完整的邮件头和邮件体构成。</li>
+</ul>
+<h3 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h3><h2 id="初步实现"><a href="#初步实现" class="headerlink" title="初步实现"></a>初步实现</h2><p>如果只是单纯的实现一个基于NBC的垃圾邮件分类器的话其实是一个很简单的课题，在不考虑性能、内存的情况下，用一个极小的数据集训练的分类器加上python已经很好的集成了常见的机器学习的模型，通常数十行代码就可以搞定。接下来的代码就是一个简单的例子。</p>
+<p>代码详见 <strong>en_train.py</strong>，以下是训练的结果：</p>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Outcome:</span><br><span class="line">              precision    recall  f1-score   support</span><br><span class="line"></span><br><span class="line">           0       0.80      1.00      0.89         8</span><br><span class="line">           1       1.00      0.71      0.83         7</span><br><span class="line"></span><br><span class="line">    accuracy                           0.87        15</span><br><span class="line">   macro avg       0.90      0.86      0.86        15</span><br><span class="line">weighted avg       0.89      0.87      0.86        15</span><br></pre></td></tr></table></figure></div>
+<p>需要注意这里的数据集并非中文垃圾邮件数据集，而是一个简化的英文邮件数据集，并且只保留了邮件的正文部分。阅读文献我们会发现<font color='#FF6F91'>一封能在互联网上流通的邮件通常有：收件人(To)、抄送(CC)、密送(BCC)、主题(Subject)、正文(Body)、签名(Signature)、附件(Attachment)等数个部分构成</font>。这显然是不合理的，但是作为一个初代分类器，这样就已经非常nice了！接下来的任务就是在这基础上慢慢地做大、做强~さあ、行くぞ！</p>
+<h2 id="改用更大的数据集！"><a href="#改用更大的数据集！" class="headerlink" title="改用更大的数据集！"></a>改用更大的数据集！</h2><p>上述的始め数据集只有正负例各25个，接下来来个大的<font color='	#00C5CD'><strong>trec06c</strong></font>( <a class="link"   target="_blank" rel="noopener" href="https://plg.uwaterloo.ca/~gvcormac/treccorpus06/" >https://plg.uwaterloo.ca/~gvcormac/treccorpus06/<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> )。该数据集一共64,620 个文件，216 个文件夹，其中正样本数21766个，负样本数42454个。而且这个数据集是一个由不带附件的原始邮件组成数据集。邮件头和邮件体有时采用了不同的编码方式，所以需要对邮件头和邮件体进行解码。比如下面列出的一封邮件：</p>
+<div class="code-container" data-rel="Txt"><figure class="iseeu highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">Received: from jdl.ac.cn ([159.226.42.8])</span><br><span class="line">	by spam-gw.ccert.edu.cn (MIMEDefang) with ESMTP id j7C1ceuQ019050</span><br><span class="line">	for &lt;shi@ccert.edu.cn&gt;; Sun, 14 Aug 2005 10:02:01 +0800 (CST)</span><br><span class="line">Received: (qmail 5448 invoked from network); Sun, 14 Aug 2005 02:12:48 -0000</span><br><span class="line">Received: from unknown (HELO d47db5334f2a479) (192.168.0.233)</span><br><span class="line">  by 159.226.42.8 with SMTP; Sun, 14 Aug 2005 02:12:48 -0000</span><br><span class="line">Message-ID: &lt;000b01c59ee0$a1f666b0$e900a8c0@d47db5334f2a479&gt;</span><br><span class="line">From: &quot;pan&quot; &lt;pan@jdl.ac.cn&gt;</span><br><span class="line">To: shi@ccert.edu.cn</span><br><span class="line">Subject: =?gb2312?B?ofEgzsrSu7K/zrrX2s3ytcS159Oww/uzxg==?=</span><br><span class="line">Date: Sun, 14 Aug 2005 10:16:47 +0800</span><br><span class="line">MIME-Version: 1.0</span><br><span class="line">Content-Type: text/plain;</span><br><span class="line">	charset=&quot;gb2312&quot;</span><br><span class="line">Content-Transfer-Encoding: base64</span><br><span class="line">X-Priority: 3</span><br><span class="line">X-MSMail-Priority: Normal</span><br><span class="line">X-Mailer: Microsoft Outlook Express 6.00.2800.1506</span><br><span class="line">X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2800.1506</span><br><span class="line"></span><br><span class="line">讲的是孔子后人的故事。一个老领导回到家乡，跟儿子感情不和，跟贪财的孙子孔为本和睦。</span><br><span class="line">老领导的弟弟魏宗万是赶马车的。</span><br><span class="line">有个洋妞大概是考察民俗的，在他们家过年。</span><br><span class="line">孔为本总想出国，被爷爷教育了。</span><br><span class="line">最后，一家人基本和解。</span><br><span class="line">顺便问另一类电影，北京青年电影制片厂的。中越战背景。一军人被介绍了一个对象，去相亲。女方是军队医院的护士，犹豫不决，总是在回忆战场上负伤的男友，好像还没死。最后</span><br><span class="line">男方表示理解，归队了。</span><br></pre></td></tr></table></figure></div>
+<p>信息量非常大，在网上可以看到一些博主在训练模型时，直接将邮件头全部砍掉，只保留邮件体部分，将这个完整的数据集简化为同上的mini数据集。这怎么看都是不对的！哪怕它们跑出来的结果再好。<font color='	#00C5CD'><strong>我们要做的过滤器应该是同时考虑邮件头和邮件体两部分的内容的逻辑上完整的过滤器。</strong></font>这一部分的参考了<a href="#2%E5%8A%A0%E6%9D%83%E8%B4%9D%E5%8F%B6%E6%96%AF%E9%82%AE%E4%BB%B6%E8%BF%87%E6%BB%A4%E6%96%B9%E6%B3%95%E7%A0%94%E7%A9%B6">这篇</a>，所以在训练之前，需要搞清楚一封正常的电子邮件是由哪几部分构成的。</p>
 
 		</div>
 
@@ -732,7 +834,7 @@
         
             <li>
                 <strong>Updated at
-                    :</strong> 2024-12-25 22:57:50
+                    :</strong> 2024-12-29 17:08:01
             </li>
         
         <li>
@@ -854,7 +956,7 @@
 	<div class="post-toc">
 		<div class="toc-title">On this page</div>
 		<div class="page-title">毕设杂记</div>
-		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AF%95%E8%AE%BE%E6%A0%87%E9%A2%98%E7%9A%84%E7%81%B5%E6%84%9F"><span class="nav-text">毕设标题的灵感</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9C%80%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84%E7%9F%A5%E8%AF%86-%E6%8C%81%E7%BB%AD%E6%89%A9%E5%85%85%EF%BC%8C%E7%BC%93%E6%85%A2%E8%A7%A3%E5%86%B3"><span class="nav-text">需要了解的知识(持续扩充，缓慢解决)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB"><span class="nav-text">文献阅读</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E3%80%8A%E4%B8%AA%E6%80%A7%E5%8C%96%E5%9E%83%E5%9C%BE%E9%82%AE%E4%BB%B6%E8%BF%87%E6%BB%A4%E7%9A%84%E6%89%A9%E5%B1%95%E7%A0%94%E7%A9%B6%E3%80%8B"><span class="nav-text">1.《个性化垃圾邮件过滤的扩展研究》</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%8A%A0%E6%9D%83%E8%B4%9D%E5%8F%B6%E6%96%AF%E9%82%AE%E4%BB%B6%E8%BF%87%E6%BB%A4%E6%96%B9%E6%B3%95%E7%A0%94%E7%A9%B6"><span class="nav-text">2.加权贝叶斯邮件过滤方法研究</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%9F%BA%E4%BA%8E%E8%A7%84%E5%88%99%E7%9A%84%E5%9E%83%E5%9C%BE%E9%82%AE%E4%BB%B6%E8%BF%87%E6%BB%A4%E7%AE%97%E6%B3%95%E6%AF%94%E8%BE%83%E7%A0%94%E7%A9%B6"><span class="nav-text">3.基于规则的垃圾邮件过滤算法比较研究</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9D%E6%AD%A5%E5%AE%9E%E7%8E%B0"><span class="nav-text">初步实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%94%B9%E7%94%A8%E6%9B%B4%E5%A4%A7%E7%9A%84%E6%95%B0%E6%8D%AE%E9%9B%86%EF%BC%81"><span class="nav-text">改用更大的数据集！</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%88%E6%90%9E%E6%B8%85%E6%A5%9A%EF%BC%8C%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6%EF%BC%81"><span class="nav-text">先搞清楚，电子邮件！</span></a></li></ol>
+		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AF%95%E8%AE%BE%E6%A0%87%E9%A2%98%E7%9A%84%E7%81%B5%E6%84%9F"><span class="nav-text">毕设标题的灵感</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9C%80%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84%E7%9F%A5%E8%AF%86-%E6%8C%81%E7%BB%AD%E6%89%A9%E5%85%85%EF%BC%8C%E7%BC%93%E6%85%A2%E8%A7%A3%E5%86%B3"><span class="nav-text">需要了解的知识(持续扩充，缓慢解决)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%88%E6%90%9E%E6%B8%85%E6%A5%9A%EF%BC%8C%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6%EF%BC%81"><span class="nav-text">先搞清楚，电子邮件！</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E9%82%AE%E4%BB%B6%E5%A4%B4%E9%83%A8-Headers"><span class="nav-text">1. 邮件头部 (Headers)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E9%82%AE%E4%BB%B6%E6%AD%A3%E6%96%87-Body"><span class="nav-text">2. 邮件正文 (Body)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E9%99%84%E4%BB%B6-Attachments"><span class="nav-text">3. 附件 (Attachments)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%9E%83%E5%9C%BE%E9%82%AE%E4%BB%B6%EF%BC%9F"><span class="nav-text">什么是垃圾邮件？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6%E7%9A%84%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE"><span class="nav-text">电子邮件的传输协议</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#SMTP-Simple-Mail-Transfer-Protocol"><span class="nav-text">SMTP(Simple Mail Transfer Protocol)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#POP3-Post-Office-Protocol-3"><span class="nav-text">POP3(Post Office Protocol 3)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#IMAP-Internet-Message-Access-Protocol"><span class="nav-text">IMAP(Internet Message Access Protocol)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MIME-Multipurpose-Internet-Mail-Extensions"><span class="nav-text">MIME(Multipurpose Internet Mail Extensions)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ESMTP-Enhanced-SMTP"><span class="nav-text">ESMTP(Enhanced SMTP)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DSN-Delivery-Status-Notification"><span class="nav-text">DSN(Delivery Status Notification)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BD%93%E5%89%8D%E4%B8%BB%E6%B5%81%E7%9A%84%E5%9E%83%E5%9C%BE%E9%82%AE%E4%BB%B6%E8%BF%87%E6%BB%A4%E6%96%B9%E6%B3%95"><span class="nav-text">当前主流的垃圾邮件过滤方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9A%84%E9%80%89%E6%8B%A9"><span class="nav-text">数据集的选择</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-trec2006c"><span class="nav-text">1. trec2006c</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2"><span class="nav-text">2.</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9D%E6%AD%A5%E5%AE%9E%E7%8E%B0"><span class="nav-text">初步实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%94%B9%E7%94%A8%E6%9B%B4%E5%A4%A7%E7%9A%84%E6%95%B0%E6%8D%AE%E9%9B%86%EF%BC%81"><span class="nav-text">改用更大的数据集！</span></a></li></ol>
 
 	</div>
 </div>
@@ -878,7 +980,7 @@
               <span>2024</span>
               -
             
-            2024&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">tasukyou</a>
+            2025&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">tasukyou</a>
             
                 
                 <p class="post-count space-x-0.5">
@@ -887,7 +989,7 @@
                     </span>
                     
                         <span>
-                            8.6k words in total
+                            8.3k words in total
                         </span>
                     
                 </p>
